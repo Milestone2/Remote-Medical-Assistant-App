@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Owner\.android\build-cache\55a090d6adc1c4e06c277571b4b4a2ce5ce435af\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_71dd288431a1f7ed8e88d8a7be6f226e3ace7ebb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Owner\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_eb0d7dff891e4a231b614f6bf625929bba99077b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_503973878f6733c79201d868bbf2f7124f15b895\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c74a3bb115ad7a91ad084d89e33c7170ef4e886">
+        <dex dex="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7617ccf9766c7c19f75c415e01e0b0f543081e7b\classes.dex" />
+    </item>
+
+</items>

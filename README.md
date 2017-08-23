@@ -1,71 +1,72 @@
 
-Android BluetoothLeGatt Sample
-===================================
+# Final Project - *Medi-Care*
 
-This sample demonstrates how to use the Bluetooth LE Generic Attribute Profile (GATT)
-to transmit arbitrary data between devices.
+** Medi-Care ** is a Remote Medical Assistant android app that allows method of transferring data from a mobile health system In a cloud-mobile environment.
 
-Introduction
-------------
+Time spent: **X** hours spent in total
 
-This sample shows a list of available Bluetooth LE devices and provides
-an interface to connect, display data and display GATT services and
-characteristics supported by the devices.
+## User Stories
 
-It creates a [Service][1] for managing connection and data communication with a GATT server
-hosted on a given Bluetooth LE device.
+The following **required** functionality is completed:
 
-The Activities communicate with the Service, which in turn interacts with the [Bluetooth LE API][2].
+**Scenario 1:**
 
-[1]:http://developer.android.com/reference/android/app/Service.html
-[2]:https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html
+* [ ] User can **Register to Medi-Care** 
+* [ ] User must be able to register his relatives in his directory.
+* [ ] User can see the history of his / her state of health.
+* [ ] The application will ask the patient for health status every ten minutes (followingThe characteristics in his profile)
+	* [ ]  The questions should be simple as: How are you?
+* [ ] Upon receipt of the response "I am OK", the system If the response is not recognized, it will be directed to the cloud to be analysis. If the cloud fails to make the necessary correspondence, an assistant Human must understand the message and take action.
+* [ ] If no movement is detected at a time period does not match the usual sleep time or, if the response has been recognized as "not feeling well", an e-mail, an SMS will be generated to his relatives.
+ 
 
-Pre-requisites
---------------
+**Scenario 2:**
+* [ ] The system checks the duration for which no movement is detected by the accelerometer.
 
-- Android SDK 25
-- Android Build Tools v25.0.3
-- Android Support Repository
+The following **optional** features are implemented:
 
-Screenshots
--------------
 
-<img src="screenshots/1-main.png" height="400" alt="Screenshot"/> <img src="screenshots/2-detail.png" height="400" alt="Screenshot"/> 
+The following **bonus** features are implemented:
 
-Getting Started
----------------
 
-This sample uses the Gradle build system. To build this project, use the
-"gradlew build" command or use "Import Project" in Android Studio.
 
-Support
--------
+The following **additional** features are implemented:
 
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
+* [ ] List anything else that you can get done to improve the app functionality!
 
-If you've found an error in this sample, please file an issue:
-https://github.com/googlesamples/android-BluetoothLeGatt
+## Video Walkthrough
 
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
+Here's a walkthrough of implemented user stories:
 
-License
--------
+<img src='https://github.com/Milestone2/Remote-medical-assistant/blob/master/image.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Copyright 2017 The Android Open Source Project, Inc.
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+## Open-source libraries used
+
+- [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
+- [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+
+## License
+
+    Copyright [2017] [ Medi-Care]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
