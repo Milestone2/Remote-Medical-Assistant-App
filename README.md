@@ -1,4 +1,3 @@
-
 # Final Project - *Medi-Care*
 
 ** Medi-Care ** is a Remote Medical Assistant android app that allows method of transferring data from a mobile health system In a cloud-mobile environment.
