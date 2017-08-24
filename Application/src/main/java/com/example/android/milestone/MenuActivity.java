@@ -16,7 +16,7 @@ import android.view.MenuItem;
 
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity;
-import com.example.android.milestone.fragments.ContactFragment;
+import com.example.android.milestone.fragments.ContactFragment2;
 import com.example.android.milestone.fragments.HistoryFragment;
 import com.example.android.milestone.fragments.HomeFragment;
 import com.example.android.milestone.fragments.ProfileFragment;
@@ -125,7 +125,7 @@ public class MenuActivity extends AppCompatActivity {
                 fragmentClass = ProfileFragment.class;
                 break;
             case R.id.nav_contact_fragment:
-                fragmentClass =ContactFragment.class;
+                fragmentClass =ContactFragment2.class;
                 break;
             case R.id.nav_setting_fragment:
                 fragmentClass = SettingFragment.class;

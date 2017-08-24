@@ -6,8 +6,6 @@ Time spent: **X** hours spent in total
 
 ## User Stories
 
-The following **required** functionality is completed:
-
 **Scenario 1:**
 
 * [ ] User can **Register to Medi-Care** 
@@ -21,6 +19,14 @@ The following **required** functionality is completed:
 
 **Scenario 2:**
 * [ ] The system checks the duration for which no movement is detected by the accelerometer.
+
+
+The following **required** functionality is completed:
+* [*] Smart bracelet Bracelet: Fitness Activity For test.
+* [*] Connect to the Smart Bracelet.
+* [*] show the current status from the smart bracelet during an intervel of time.
+* [ ] Read Data From the Smart Bracelet.
+* [ ] Send sms, e-mail, localization in case of alert to ones relatives.
 
 The following **optional** features are implemented:
 
@@ -37,9 +43,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Milestone2/Remote-medical-assistant/blob/master/image.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+<img src='http://i.imgur.com/wFJbnkO.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+<img src='Remote-medical-assistant/screenshots/4-detail.png' width='' alt='Video Walkthrough' />
+<img src='Remote-medical-assistant/screenshots/5-detail.png' width='' alt='Video Walkthrough' />
+<img src='Remote-medical-assistant/screenshots/6-detail.png' width='' alt='Video Walkthrough' />
 
 
 
@@ -53,6 +62,7 @@ Describe any challenges encountered while building the app.
 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
 - [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+- android-BluetoothLeGatt  - To connect the Smart Bracelet to the android Phone.
 
 ## License
 
