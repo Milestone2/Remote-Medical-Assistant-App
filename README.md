@@ -46,9 +46,9 @@ Here's a walkthrough of implemented user stories:
 <img src='http://i.imgur.com/wFJbnkO.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-<img src='Remote-medical-assistant/screenshots/4-detail.png' width='' alt='Video Walkthrough' />
-<img src='Remote-medical-assistant/screenshots/5-detail.png' width='' alt='Video Walkthrough' />
-<img src='Remote-medical-assistant/screenshots/6-detail.png' width='' alt='Video Walkthrough' />
+<img src='Remote-medical-assistant\screenshots\4-detail.png' width='' alt='Video Walkthrough' />
+<img src='Remote-medical-assistant\screenshots\5-detail.png' width='' alt='Video Walkthrough' />
+<img src='Remote-medical-assistant\screenshots\6-detail.png' width='' alt='Video Walkthrough' />
 
 
 
