@@ -64,12 +64,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\\output\\res\\layout\\design_layout_tab_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -88,16 +88,16 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Emmanuel Roodly\\.android\\build-cache\\40533f8921e65ee36cbedc8cd1e8889003130250\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
         "source": "C:\\Users\\Emmanuel Roodly\\.android\\build-cache\\40533f8921e65ee36cbedc8cd1e8889003130250\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
-        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\Emmanuel Roodly\\.android\\build-cache\\40533f8921e65ee36cbedc8cd1e8889003130250\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
@@ -120,20 +120,20 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
         "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\Emmanuel Roodly\\.android\\build-cache\\40533f8921e65ee36cbedc8cd1e8889003130250\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\setting_fragment.xml",
         "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\layout\\setting_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\setting_fragment.xml",
@@ -220,20 +220,20 @@
         "source": "C:\\Users\\Emmanuel Roodly\\.android\\build-cache\\40533f8921e65ee36cbedc8cd1e8889003130250\\output\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_indeterminate_progress.xml",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\layout\\actionbar_indeterminate_progress.xml"
+        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_indeterminate_progress.xml",
+        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\layout\\actionbar_indeterminate_progress.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
@@ -742,6 +742,10 @@
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",

@@ -66,6 +66,7 @@
             android:label="@string/title_activity_test" />
         <activity android:name="com.example.android.milestone.MenuActivity" />
         <activity android:name="com.example.android.milestone.SendActivity" />
+        <activity android:name="com.example.android.milestone.RegisterActivity"></activity>
     </application>
 
 </manifest>

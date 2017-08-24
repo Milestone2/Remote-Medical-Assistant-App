@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.backendless.Backendless;
 import com.example.android.bluetoothlegatt.R;
 
 
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         etPassword = (EditText) findViewById(R.id.etPassword);
         btLogin = (Button) findViewById(R.id.btLogIn);
         tvResetPassword = (TextView) findViewById(R.id.tvResetPassword);
+
+        Backendless.setUrl( Defaults.SERVER_URL );
+        Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
 
 
         btLogin.setOnClickListener(new View.OnClickListener() {
