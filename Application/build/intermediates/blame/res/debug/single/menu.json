@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\src\\main\\res\\menu\\main.xml"
     },
     {
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\gatt_services.xml",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\menu\\gatt_services.xml"
+    },
+    {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
         "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\menu\\menu.xml"
     },
@@ -22,6 +26,10 @@
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
         "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\menu\\main.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
@@ -38,6 +46,14 @@
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\gatt_services.xml",
         "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\src\\main\\res\\menu\\gatt_services.xml"
+    },
+    {
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\drawer_view.xml",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\menu\\drawer_view.xml"
+    },
+    {
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\menu\\menu.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\drawer_view.xml",

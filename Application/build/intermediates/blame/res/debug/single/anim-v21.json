@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Emmanuel Roodly\\.android\\build-cache\\2a38b394ffb5d80cc1150ec48591249dce0ad99c\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
@@ -10,6 +14,10 @@
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Emmanuel Roodly\\.android\\build-cache\\2a38b394ffb5d80cc1150ec48591249dce0ad99c\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",

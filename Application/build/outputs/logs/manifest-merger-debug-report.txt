@@ -1,157 +1,157 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:16:1-71:12
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:16:1-71:12
 	package
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:17:5-50
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:17:5-50
 	android:versionName
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:19:5-30
-		INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:19:5-30
+		INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml
 	android:versionCode
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:18:5-28
-		INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:18:5-28
+		INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:16:11-69
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:16:11-69
 uses-feature#android.hardware.bluetooth_le
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:30:5-32:35
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:30:5-32:35
 	android:required
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:32:9-32
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:32:9-32
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:31:9-53
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:31:9-53
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:34:5-68
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:34:5-68
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:34:22-65
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:34:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:35:5-74
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:35:5-74
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:35:22-71
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:35:22-71
 uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:36:5-67
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:36:5-67
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:36:22-64
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:36:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:37:5-79
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:37:5-79
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:37:22-76
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:37:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:38:5-81
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:38:5-81
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:38:22-78
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:38:22-78
 application
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:40:5-69:19
-MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Owner\.android\build-cache\e662e7afab6767cef7b68f9f145854d0d63ff0e1\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Owner\.android\build-cache\8a748cb805d5d3531057fd83fcdeb36eabb61007\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\Owner\.android\build-cache\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Owner\.android\build-cache\66dd56b5a39774f17a2f5f67eaf555262d8821d5\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\62f8849c697ac122faaaa5f846a81a2d25c78a89\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Owner\.android\build-cache\df41e7243c1c4c102bd8474bbb4ebffc93657145\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Owner\.android\build-cache\33f182dc9239348bf502d6af5fa12b26466d1aff\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Owner\.android\build-cache\cd2380fefe4813262a070ce9da225b2b187ab049\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Owner\.android\build-cache\8f625b8d9599bd240a02415b82791eb822619456\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Owner\.android\build-cache\d0531a692625fe165e286ddfd5cdbf885ff9f3cd\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\cb138b61e51b64519c1987086d5787a04f6a11f1\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\bf9804af8a051014c0e602c9260be6da776070b1\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Owner\.android\build-cache\c21c20a8f531b9dc8488b00d87ed533703acdc32\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Owner\.android\build-cache\55a090d6adc1c4e06c277571b4b4a2ce5ce435af\output\AndroidManifest.xml:9:5-20
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:40:5-69:19
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\437c44433dd05cbf32ceecbb62f07b565605b05e\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\2df925929ce123bb9f1b3ee77773d62801b5312c\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\2a38b394ffb5d80cc1150ec48591249dce0ad99c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\4b2939826da90eea6609f580c94491feac244f16\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\40533f8921e65ee36cbedc8cd1e8889003130250\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\de207523b3f879d7b55679ee93659c804af342e6\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\a103f3f9303ffee4e4cfa867254bd573c49c77eb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\5b7a6fd27b5405bf20a73c277c9b9d8e5f97b91c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\7a5392de5f4611a30ec9f088482b808435b60dd1\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\622493ac505ea904271567f9e8ccbbd9c504493f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\493c698290593d3c4000248d90e3ab2ff4034b5b\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\42fac6f8129f26ea22819ac70cddb23bb701fe8d\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\9ee0ce0a026c84ff21fc1cb0a607509891aeb91b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Emmanuel Roodly\.android\build-cache\f836f9c8ba1b4e015e2ae8be22b9c5196f09c5c0\output\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:42:9-41
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:42:9-41
 	android:icon
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:41:9-45
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:41:9-45
 	android:theme
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:43:9-40
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:43:9-40
 activity#com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:44:9-47:63
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:44:9-47:63
 	android:label
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:46:13-45
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:46:13-45
 	android:theme
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:47:13-60
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:47:13-60
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:45:13-93
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:45:13-93
 activity#com.example.android.milestone.bluetoothGattBLE.DeviceControlActivity
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:48:9-50:63
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:48:9-50:63
 	android:theme
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:50:13-60
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:50:13-60
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:49:13-96
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:49:13-96
 service#com.example.android.milestone.bluetoothGattBLE.BluetoothLeService
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:52:9-55:63
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:52:9-55:63
 	android:enabled
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:54:13-35
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:54:13-35
 	android:theme
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:55:13-60
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:55:13-60
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:53:13-93
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:53:13-93
 activity#com.example.android.milestone.MainActivity
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:57:9-63:20
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:57:9-63:20
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:57:19-76
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:57:19-76
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:58:13-62:29
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:58:13-62:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:59:17-69
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:59:17-69
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:59:25-66
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:61:17-77
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:61:17-77
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:61:27-74
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:61:27-74
 activity#com.example.android.milestone.Splash
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:64:9-66:59
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:64:9-66:59
 	android:label
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:66:13-56
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:66:13-56
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:65:13-64
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:65:13-64
 activity#com.example.android.milestone.MenuActivity
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:67:9-79
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:67:9-79
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:67:19-76
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:67:19-76
 activity#com.example.android.milestone.SendActivity
-ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:68:9-79
+ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:68:9-79
 	android:name
-		ADDED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml:68:19-76
+		ADDED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:68:19-76
 uses-sdk
-INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Owner\.android\build-cache\e662e7afab6767cef7b68f9f145854d0d63ff0e1\output\AndroidManifest.xml:21:5-23:55
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Owner\.android\build-cache\8a748cb805d5d3531057fd83fcdeb36eabb61007\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:25.3.1] C:\Users\Owner\.android\build-cache\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Owner\.android\build-cache\d38f9168353219c1671ce8eb27cc42cc428ea44a\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Owner\.android\build-cache\66dd56b5a39774f17a2f5f67eaf555262d8821d5\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\62f8849c697ac122faaaa5f846a81a2d25c78a89\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Owner\.android\build-cache\df41e7243c1c4c102bd8474bbb4ebffc93657145\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Owner\.android\build-cache\33f182dc9239348bf502d6af5fa12b26466d1aff\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Owner\.android\build-cache\cd2380fefe4813262a070ce9da225b2b187ab049\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Owner\.android\build-cache\8f625b8d9599bd240a02415b82791eb822619456\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Owner\.android\build-cache\d0531a692625fe165e286ddfd5cdbf885ff9f3cd\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\cb138b61e51b64519c1987086d5787a04f6a11f1\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\bf9804af8a051014c0e602c9260be6da776070b1\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Owner\.android\build-cache\c21c20a8f531b9dc8488b00d87ed533703acdc32\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Owner\.android\build-cache\55a090d6adc1c4e06c277571b4b4a2ce5ce435af\output\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\437c44433dd05cbf32ceecbb62f07b565605b05e\output\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\2df925929ce123bb9f1b3ee77773d62801b5312c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\2a38b394ffb5d80cc1150ec48591249dce0ad99c\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\af4fa3afeff0ace6c43891dd6d2d21636abc035c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\4b2939826da90eea6609f580c94491feac244f16\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\40533f8921e65ee36cbedc8cd1e8889003130250\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\de207523b3f879d7b55679ee93659c804af342e6\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\a103f3f9303ffee4e4cfa867254bd573c49c77eb\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\5b7a6fd27b5405bf20a73c277c9b9d8e5f97b91c\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\7a5392de5f4611a30ec9f088482b808435b60dd1\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\622493ac505ea904271567f9e8ccbbd9c504493f\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\493c698290593d3c4000248d90e3ab2ff4034b5b\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\42fac6f8129f26ea22819ac70cddb23bb701fe8d\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\9ee0ce0a026c84ff21fc1cb0a607509891aeb91b\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Emmanuel Roodly\.android\build-cache\f836f9c8ba1b4e015e2ae8be22b9c5196f09c5c0\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Owner\.android\build-cache\e662e7afab6767cef7b68f9f145854d0d63ff0e1\output\AndroidManifest.xml:23:9-52
+		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\437c44433dd05cbf32ceecbb62f07b565605b05e\output\AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
-		INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Owner\AndroidStudioProjects\ble\Remote-medical-assistant\Remote-medical-assistant\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\myCreation\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Owner\.android\build-cache\e662e7afab6767cef7b68f9f145854d0d63ff0e1\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Owner\.android\build-cache\8a748cb805d5d3531057fd83fcdeb36eabb61007\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:design:25.3.1] C:\Users\Owner\.android\build-cache\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Owner\.android\build-cache\d38f9168353219c1671ce8eb27cc42cc428ea44a\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Owner\.android\build-cache\66dd56b5a39774f17a2f5f67eaf555262d8821d5\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\62f8849c697ac122faaaa5f846a81a2d25c78a89\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Owner\.android\build-cache\df41e7243c1c4c102bd8474bbb4ebffc93657145\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Owner\.android\build-cache\33f182dc9239348bf502d6af5fa12b26466d1aff\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Owner\.android\build-cache\cd2380fefe4813262a070ce9da225b2b187ab049\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Owner\.android\build-cache\8f625b8d9599bd240a02415b82791eb822619456\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Owner\.android\build-cache\d0531a692625fe165e286ddfd5cdbf885ff9f3cd\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\cb138b61e51b64519c1987086d5787a04f6a11f1\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\bf9804af8a051014c0e602c9260be6da776070b1\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Owner\.android\build-cache\c21c20a8f531b9dc8488b00d87ed533703acdc32\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\437c44433dd05cbf32ceecbb62f07b565605b05e\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\2df925929ce123bb9f1b3ee77773d62801b5312c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:design:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\2a38b394ffb5d80cc1150ec48591249dce0ad99c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\af4fa3afeff0ace6c43891dd6d2d21636abc035c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\4b2939826da90eea6609f580c94491feac244f16\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\40533f8921e65ee36cbedc8cd1e8889003130250\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\de207523b3f879d7b55679ee93659c804af342e6\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\a103f3f9303ffee4e4cfa867254bd573c49c77eb\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\5b7a6fd27b5405bf20a73c277c9b9d8e5f97b91c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\7a5392de5f4611a30ec9f088482b808435b60dd1\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\622493ac505ea904271567f9e8ccbbd9c504493f\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\493c698290593d3c4000248d90e3ab2ff4034b5b\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\42fac6f8129f26ea22819ac70cddb23bb701fe8d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\9ee0ce0a026c84ff21fc1cb0a607509891aeb91b\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Owner\.android\build-cache\e662e7afab6767cef7b68f9f145854d0d63ff0e1\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\437c44433dd05cbf32ceecbb62f07b565605b05e\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Owner\.android\build-cache\e662e7afab6767cef7b68f9f145854d0d63ff0e1\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Emmanuel Roodly\.android\build-cache\437c44433dd05cbf32ceecbb62f07b565605b05e\output\AndroidManifest.xml:26:9-47

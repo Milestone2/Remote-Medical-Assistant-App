@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="22"
-    build-mode="COLD"
-    density="hdpi"
+    api-level="23"
+    build-mode="FULL"
+    density="xxhdpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1503254881600"
+    timestamp="1503613842401"
     token="8352936210708845728"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -24,22 +24,82 @@
         duration="0" />
 
     <artifact
-        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\outputs\apk\Application-debug.apk"
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\outputs\apk\Application-debug.apk"
         type="SPLIT_MAIN" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1503252995899"
+        timestamp="1503613842401"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\outputs\apk\Application-debug.apk"
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\outputs\apk\Application-debug.apk"
             type="SPLIT_MAIN" />
-        <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
@@ -47,13 +107,55 @@
             location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -64,31 +166,6 @@
         <artifact
             location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1503253883904"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1503254881600"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\outputs\apk\Application-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

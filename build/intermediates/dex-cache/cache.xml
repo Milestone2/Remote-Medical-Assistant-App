@@ -2,40 +2,175 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\Owner\.android\build-cache\55a090d6adc1c4e06c277571b4b4a2ce5ce435af\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\5b7a6fd27b5405bf20a73c277c9b9d8e5f97b91c\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_71dd288431a1f7ed8e88d8a7be6f226e3ace7ebb\classes.dex" />
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_ad804909fa792738f393ec8ea59e495ad1d95a2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\437c44433dd05cbf32ceecbb62f07b565605b05e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8531f2d46b35de75e6130f25830e0c2c0d6bb98c">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_5b0a8275c933d6c4cde8bae6f9c3c487008a95e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\4b2939826da90eea6609f580c94491feac244f16\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_548303ad9b5c70d280afe2bc0ccfaf00d89331e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\af4fa3afeff0ace6c43891dd6d2d21636abc035c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_0008b7ef90dfcd3cc86372cb0b6579480976011b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\622493ac505ea904271567f9e8ccbbd9c504493f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_dea3859a7ddb10774a1ef771b7d1de482fb1480c.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Owner\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jar="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_eb0d7dff891e4a231b614f6bf625929bba99077b\classes.dex" />
+        sha1="a871414a0c7747efa4d4821d49eb4fc1d723b374">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1a5a27262939355b790b10efbda9d334a5ddd6ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\de207523b3f879d7b55679ee93659c804af342e6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_bed2f62470baa524df08dac201b82533ce9034fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\2df925929ce123bb9f1b3ee77773d62801b5312c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_7e0a2091aad7915c90fe43b6a13b73f08fdae1b8.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_503973878f6733c79201d868bbf2f7124f15b895\classes.dex" />
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_cafdddf4bf6aaa84ceec193fdc39239d188c59e9\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\f836f9c8ba1b4e015e2ae8be22b9c5196f09c5c0\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="0c74a3bb115ad7a91ad084d89e33c7170ef4e886">
-        <dex dex="C:\Users\Owner\AndroidStudioProjects\ble\android-BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7617ccf9766c7c19f75c415e01e0b0f543081e7b\classes.dex" />
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_3e75f6163dd2e52a6634f8f1d175c69c137b895b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\2a38b394ffb5d80cc1150ec48591249dce0ad99c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_97f1591c680e6ef3ceca7ffb4cd8fdadb90bc6da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\a103f3f9303ffee4e4cfa867254bd573c49c77eb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_144a2c199919413f4a59e31920ea16f1f8a5c59e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Public\android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_4fa153119228d9ae58aa37dbb22ae892f5dcdf5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\42fac6f8129f26ea22819ac70cddb23bb701fe8d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_26ef77da20d17e920309e9b20bb83c72c614ecfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\9ee0ce0a026c84ff21fc1cb0a607509891aeb91b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_ad74b421fbf5b47bb4319d7f29b559e3760aa1fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\493c698290593d3c4000248d90e3ab2ff4034b5b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_4e4e165dfbde69a41b5a0157e007a540c1a359fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Public\android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_cd0f250897ac2f17a7a4349d9217e46ee03440d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\7a5392de5f4611a30ec9f088482b808435b60dd1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_b804a4d2e55ccf36cedf621510762158090f003a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Emmanuel Roodly\.android\build-cache\40533f8921e65ee36cbedc8cd1e8889003130250\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\myCreation\Remote-Medical-Assistant-App\Application\build\intermediates\pre-dexed\debug\classes_dfdaccd8efea1fe9fa5d349652722eda690fc913.jar" />
     </item>
 
 </items>

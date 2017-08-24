@@ -1,4 +1,7 @@
-#Wed Aug 23 20:41:23 GMT-05:00 2017
-base.0=C\:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Thu Aug 24 18:31:17 EDT 2017
+base.0=C\:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1a5a27262939355b790b10efbda9d334a5ddd6ca
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_cafdddf4bf6aaa84ceec193fdc39239d188c59e9\\classes.dex
+base.1=C\:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_cafdddf4bf6aaa84ceec193fdc39239d188c59e9
+file.0=C\:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1a5a27262939355b790b10efbda9d334a5ddd6ca\\classes.dex

@@ -38,6 +38,9 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -48,17 +51,19 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.android.bluetoothlegatt.DeviceScanActivity"
+            android:name="com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Holo.Light" >
-        </activity>
-        <activity android:name="com.example.android.bluetoothlegatt.DeviceControlActivity" />
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name="com.example.android.milestone.bluetoothGattBLE.DeviceControlActivity"
+            android:theme="@android:style/Theme.Holo.Light" />
 
         <service
-            android:name="com.example.android.bluetoothlegatt.BluetoothLeService"
-            android:enabled="true" />
+            android:name="com.example.android.milestone.bluetoothGattBLE.BluetoothLeService"
+            android:enabled="true"
+            android:theme="@android:style/Theme.Holo.Light" />
 
-        <activity android:name="com.example.android.bluetoothlegatt.MainActivity" >
+        <activity android:name="com.example.android.milestone.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -66,9 +71,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.bluetoothlegatt.Splash"
+            android:name="com.example.android.milestone.Splash"
             android:label="@string/title_activity_test" />
-        <activity android:name="com.example.android.bluetoothlegatt.MenuActivity" />
+        <activity android:name="com.example.android.milestone.MenuActivity" />
+        <activity android:name="com.example.android.milestone.SendActivity" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
