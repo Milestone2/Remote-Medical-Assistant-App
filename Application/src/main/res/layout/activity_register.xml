@@ -1,9 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.android.milestone.RegisterActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="Create a new account"
+        android:textColor="@color/ThemeColor"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/tvR_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Nom : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_name"
+            android:layout_width="214dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Prenom : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_prenom"
+            android:layout_width="214dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Date de naissance : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_birth"
+            android:layout_width="214dp"
+            android:inputType="date"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvR_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="email : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_email"
+            android:layout_width="214dp"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="telephone : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_telephone"
+            android:layout_width="214dp"
+            android:inputType="phone"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_pass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Mot de passe : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_pass1"
+            android:layout_width="214dp"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_pass2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Mot de passe (again) : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_pass2"
+            android:layout_width="214dp"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+
+    </GridLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="21dp"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/button2"
+            android:layout_marginEnd="44dp"
+            android:text="Register" />
+    </RelativeLayout>
+</LinearLayout>
