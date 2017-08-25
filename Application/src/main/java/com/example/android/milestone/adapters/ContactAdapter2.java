@@ -49,7 +49,7 @@ public class ContactAdapter2 extends ArrayAdapter<Contact> {
 
         if(convertView == null){
             LayoutInflater inflater = LayoutInflater.from(getContext());
-            convertView = inflater.inflate(R.layout.item_contact2, parent, false);
+            convertView = inflater.inflate(R.layout.contact_item, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.tvIemNom = (TextView) convertView.findViewById(R.id.tvitemNom);
 

@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="60dp"
         android:text="Username : "
         android:textColor="@android:color/black"
         android:textSize="18sp" />
@@ -106,13 +106,9 @@
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:shadowColor="@android:color/black"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="5"
-        android:text="New Account "
+        android:text="New Account"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="20sp" />
 

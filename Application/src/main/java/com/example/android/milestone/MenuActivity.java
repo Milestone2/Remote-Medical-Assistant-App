@@ -2,9 +2,12 @@ package com.example.android.milestone;
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,12 +16,15 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.FrameLayout;
 
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity;
 import com.example.android.milestone.fragments.ContactFragment2;
 import com.example.android.milestone.fragments.HistoryFragment;
 import com.example.android.milestone.fragments.HomeFragment;
+import com.example.android.milestone.fragments.LocalisationFragment;
 import com.example.android.milestone.fragments.ProfileFragment;
 import com.example.android.milestone.fragments.SendFragment;
 import com.example.android.milestone.fragments.SettingFragment;
@@ -27,6 +33,8 @@ public class MenuActivity extends AppCompatActivity {
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
     private NavigationView nvDrawer;
+    public FloatingActionButton fab;
+    FrameLayout fragmentContainer;
 
     // Make sure to be using android.support.v7.app.ActionBarDrawerToggle version.
     // The android.support.v4.app.ActionBarDrawerToggle has been deprecated.
@@ -39,6 +47,7 @@ public class MenuActivity extends AppCompatActivity {
         // Set a Toolbar to replace the ActionBar.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("Home");
 
         // Find our drawer view
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -49,6 +58,23 @@ public class MenuActivity extends AppCompatActivity {
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
         // Setup drawer view
         setupDrawerContent(nvDrawer);
+        fragmentContainer = (FrameLayout) findViewById(R.id.flContent);
+
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+
+            }
+        });
+
+        if(savedInstanceState == null){
+            HomeFragment homeFragment = HomeFragment.newInstance();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.flContent, homeFragment);
+            ft.commit();
+        }
 
 
     }
@@ -126,6 +152,9 @@ public class MenuActivity extends AppCompatActivity {
                 break;
             case R.id.nav_contact_fragment:
                 fragmentClass =ContactFragment2.class;
+                break;
+            case R.id.nav_localisation:
+                fragmentClass = LocalisationFragment.class;
                 break;
             case R.id.nav_setting_fragment:
                 fragmentClass = SettingFragment.class;
