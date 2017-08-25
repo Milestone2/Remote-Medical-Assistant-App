@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingAddContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        app:backgroundTint="@color/ThemeColor"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ThemeColor"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:text="Emergency contacts"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/lvContact"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10.0sp"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

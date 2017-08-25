@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#ff4081</color>
     <color name="ThemeColor">#648ff5</color>
+    <color name="newcolor">#4178fb</color>
+    <color name="colorio">#fb2870</color>
 </resources>

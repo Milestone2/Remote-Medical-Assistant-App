@@ -1,74 +1,46 @@
 [
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_history.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_history.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_contact.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_contact.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_share.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_share.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_send.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profile.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_profile.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profil.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_profil.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emergency.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_emergency.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_contact.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_contact.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_localisation.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_localisation.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_send.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_send.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profile.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_profile.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_home.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_home.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_history.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_history.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_history.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_history.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_setting_bluetooth.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_setting_bluetooth.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_share.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_share.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profile.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_profile.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_setting_bluetooth.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_setting_bluetooth.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_contact.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_contact.png"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_send.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_send.png"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_home.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_home.png"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_setting_bluetooth.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_setting_bluetooth.png"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profil.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\src\\main\\res\\drawable-xhdpi\\ic_profil.png"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_share.png",
-        "source": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\src\\main\\res\\drawable-xhdpi\\ic_share.png"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_home.png",
+        "source": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xhdpi\\ic_home.png"
     }
 ]

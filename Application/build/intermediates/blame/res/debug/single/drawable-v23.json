@@ -1,14 +1,6 @@
 [
     {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\android-BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\drawable-v23\\abc_control_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\drawable-v23\\abc_control_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\AndroidStudioProjects\\ble\\Remote-medical-assistant\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\drawable-v23\\abc_control_background_material.xml"
+        "merged": "C:\\myCreation\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "C:\\Users\\Emmanuel Roodly\\.android\\build-cache\\40533f8921e65ee36cbedc8cd1e8889003130250\\output\\res\\drawable-v23\\abc_control_background_material.xml"
     }
 ]
