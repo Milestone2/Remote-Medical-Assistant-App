@@ -39,4 +39,11 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
+    <string name="testuser">TestUser</string>
+    <string name="testpass">12345</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="hintName">Josue</string>
+    <string name="hintprenom">josha</string>
+    <string name="hintmail">josuejosha@domain.com</string>
+    <string name="hintnumber">36910370</string>
 </resources>

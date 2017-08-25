@@ -8,11 +8,13 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.android.bluetoothlegatt.R;
 
@@ -51,13 +53,24 @@ public class AddContact extends DialogFragment {
             @Override
             public void onClick(View view) {
 
-                SendContactInfo();//Donnees envoyees a la liste des contacts
-                etName.getText().clear();
-                etPrenom.getText().clear();
-                etEmail.getText().clear();
-                etNumber1.getText().clear();
-                etNumber2.getText().clear();
-                dismiss();
+                if(!TextUtils.isEmpty(etName.getText().toString()) &&
+                        !TextUtils.isEmpty(etName.getText().toString()) &&
+                        !TextUtils.isEmpty(etPrenom.getText().toString()) &&
+                        !TextUtils.isEmpty(etEmail.getText().toString()) &&
+                        !TextUtils.isEmpty(etNumber1.getText().toString()) &&
+                        !TextUtils.isEmpty(etNumber2.getText().toString())
+                        ){
+                    SendContactInfo();//Donnees envoyees a la liste des contacts
+                    etName.getText().clear();
+                    etPrenom.getText().clear();
+                    etEmail.getText().clear();
+                    etNumber1.getText().clear();
+                    etNumber2.getText().clear();
+                    dismiss();
+                }else{
+                    Toast.makeText(getContext(), "Tous les champs sont obligatoires", Toast.LENGTH_SHORT).show();
+                }
+
 
             }
         });

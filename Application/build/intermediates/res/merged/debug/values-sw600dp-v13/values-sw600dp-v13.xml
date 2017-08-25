@@ -17,6 +17,8 @@
     <dimen name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</dimen>
     <dimen name="design_tab_scrollable_min_width">160dp</dimen>
     <dimen name="horizontal_page_margin">@dimen/margin_huge</dimen>
+    <item name="mr_dialog_fixed_width_major" type="dimen">60%</item>
+    <item name="mr_dialog_fixed_width_minor" type="dimen">90%</item>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
     <integer name="design_snackbar_text_max_lines">1</integer>
     <string name="action_settings">Settings</string>

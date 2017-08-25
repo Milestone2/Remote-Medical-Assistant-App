@@ -20,10 +20,28 @@
             android:layout_height="wrap_content" />
 
         <!-- The main content view where fragments are loaded -->
-        <FrameLayout
-            android:id="@+id/flContent"
+        <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/flContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:id="@+id/fab"
+                android:src="@drawable/ic_emergency"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                app:backgroundTint="@color/ThemeColor"
+                app:fabSize="normal" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
     </LinearLayout>
 
     <!-- The navigation drawer that comes from the left -->

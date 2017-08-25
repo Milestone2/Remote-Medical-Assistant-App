@@ -6,6 +6,7 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         android:onClick="onBluetooth"
-        app:showAsAction="never" />
+        android:icon="@drawable/bluetooth2"
+        app:showAsAction="always" />
 
 </menu>
