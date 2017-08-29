@@ -177,11 +177,22 @@
             android:id="@+id/tv3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
             android:text="ID"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/custom_button"
+            android:layout_alignTop="@+id/btnModify"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/background_light"
+            android:text="Modifier le profil" />
 
     </LinearLayout>
 </RelativeLayout>

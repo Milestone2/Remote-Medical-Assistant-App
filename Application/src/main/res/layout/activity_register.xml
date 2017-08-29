@@ -94,13 +94,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:padding="5dp"
-            android:text="Hauteur (m): "
+            android:text="Groupe Sanguin: "
             android:textSize="14sp" />
 
         <EditText
             android:id="@+id/etR_GroupeS"
-            android:layout_width="214dp"
-            android:inputType="number"
+            android:layout_width="70dp"
             android:textSize="14sp" />
 
         <TextView

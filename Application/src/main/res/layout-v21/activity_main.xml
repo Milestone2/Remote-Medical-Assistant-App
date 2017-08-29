@@ -11,6 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:layout_marginBottom="40dp"
         android:background="@color/ThemeColor">
 
         <TextView
@@ -112,6 +113,7 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="5"
+        android:clickable="true"
         android:text="New Account "
         android:textColor="@android:color/holo_blue_light"
         android:textSize="20sp" />

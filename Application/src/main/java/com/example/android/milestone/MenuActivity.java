@@ -14,11 +14,13 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.telephony.SmsManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.backendless.BackendlessUser;
 import com.example.android.bluetoothlegatt.R;
@@ -40,6 +42,10 @@ public class MenuActivity extends AppCompatActivity {
     BackendlessUser user;
     TextView tvL_user;
     TextView tvL_email;
+
+    double latitude;
+    double longitude;
+    GPSTracker gps;
 
     // Make sure to be using android.support.v7.app.ActionBarDrawerToggle version.
     // The android.support.v4.app.ActionBarDrawerToggle has been deprecated.
@@ -75,7 +81,8 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
-
+                sendEmail();
+                sendSMS("37396810");
             }
         });
 
@@ -202,4 +209,56 @@ public class MenuActivity extends AppCompatActivity {
         Intent i= new Intent(this, DeviceScanActivity.class);
         startActivity(i);
     }
+
+    public void sendEmail() {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("plain/text");
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"pbobc10@gmail.com"});
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Medi-Care");
+        intent.putExtra(Intent.EXTRA_TEXT, "Test from Medi-care");
+        if (null != intent.resolveActivity(getPackageManager())) {
+            startActivity(Intent.createChooser(intent, ""));
+        }
+    }
+
+    public void sendSMS(String phone) {
+
+        String sms = "Please help," +  location() + "My Body Diagnostic -\n" + "Heart beat:89BMP\n" + "Oxygen:89% \n" + "Breathing:89 \n" + "Tempeture:89.F \n";
+
+        try {
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(phone, null, sms, null, null);
+            Toast.makeText(getApplicationContext(), "SMS Sent!",
+                    Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(),
+                    "SMS faild, please try again later!",
+                    Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
+
+    }
+
+    private String location() {
+        // TODO Auto-generated method stub
+        // create class object
+        gps = new GPSTracker(getApplicationContext());
+
+        // check if GPS enabled
+        if (gps.canGetLocation()) {
+
+            latitude = gps.getLatitude();
+            longitude = gps.getLongitude();
+            // \n is for new line
+            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+        } else {
+            // can't get location
+            // GPS or Network is not enabled
+            // Ask user to enable GPS/network in settings
+            //gps.showSettingsAlert();
+
+        }
+        return "my Location is Lat:" + latitude + "\nLong:" + longitude;
+    }
+
 }

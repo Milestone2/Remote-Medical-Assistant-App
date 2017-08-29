@@ -44,7 +44,8 @@ public class RegisterActivity extends AppCompatActivity {
         etR_email = (EditText) findViewById(R.id.etR_email);
         etR_Telephone = (EditText) findViewById(R.id.etR_telephone);
         etR_pass1 = (EditText) findViewById(R.id.etR_pass1);
-        etR_pass2 = (EditText) findViewById(R.id.etR_pass2);
+        etR_pass2 = (
+                EditText) findViewById(R.id.etR_pass2);
         etR_poids = (EditText) findViewById(R.id.etR_poids);
         etR_birth = (EditText) findViewById(R.id.etR_birth);
         etR_hauteur = (EditText) findViewById( R.id.etR_hauteur);
@@ -76,7 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     Toast.makeText(RegisterActivity.this, "No internet ", Toast.LENGTH_SHORT).show();
                                 }
                             }else{
-                                Toast.makeText(RegisterActivity.this, "Use Wi-Fi or mobile network", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "Use Wi-Fi or Mobile Network", Toast.LENGTH_SHORT).show();
                             }
                         }else {
                             Toast.makeText(RegisterActivity.this, "email adress is required", Toast.LENGTH_SHORT).show();
@@ -94,14 +95,6 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-
-    /*public  LoadingCallBack<BackendLessUser> createRegistrationCallback(){
-
-        return new LoadingCallBack<BackendLessUser>(this, "sending registration request...");
-
-
-
-    }*/
 
     public void registerUser(String name, String email, String password, String tel, String doctor, double height, double weight, String birth, String gs){
 

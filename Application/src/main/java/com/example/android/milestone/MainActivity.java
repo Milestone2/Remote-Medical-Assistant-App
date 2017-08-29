@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.telephony.SmsManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvRegister;
     Button btLogin;
     private Toolbar toolbar;
-    User user;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,5 +128,6 @@ public class MainActivity extends AppCompatActivity {
         catch (InterruptedException e) { e.printStackTrace(); }
         return false;
     }
+
 
 }

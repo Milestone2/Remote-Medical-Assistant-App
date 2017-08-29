@@ -110,6 +110,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginTop="30dp"
         android:gravity="center"
+        android:clickable="true"
         android:text="New Account"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="20sp" />
