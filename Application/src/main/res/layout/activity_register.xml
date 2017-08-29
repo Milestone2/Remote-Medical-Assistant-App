@@ -13,9 +13,15 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="8dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:layout_marginBottom="20dp"
+        android:background="@color/ThemeColor"
         android:text="Create a new account"
-        android:textColor="@color/ThemeColor"
-        android:textSize="18sp" />
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -27,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
             android:padding="5dp"
             android:text="Nom : "
             android:textSize="14sp" />
@@ -34,6 +41,7 @@
         <EditText
             android:id="@+id/etR_name"
             android:layout_width="214dp"
+            android:layout_marginTop="25dp"
             android:textSize="14sp" />
 
         <TextView
@@ -42,12 +50,57 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:padding="5dp"
-            android:text="Prenom : "
+            android:text="Docteur ref. : "
             android:textSize="14sp" />
 
         <EditText
             android:id="@+id/etR_prenom"
             android:layout_width="214dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/poids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Poids (Kg) : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_poids"
+            android:layout_width="214dp"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_hauteur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Hauteur (m): "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_hauteur"
+            android:layout_width="214dp"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_groupeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Hauteur (m): "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_GroupeS"
+            android:layout_width="214dp"
+            android:inputType="number"
             android:textSize="14sp" />
 
         <TextView
@@ -138,16 +191,20 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:background="@drawable/custom_button"
             android:layout_marginStart="56dp"
+            android:textColor="@android:color/background_light"
             android:layout_marginTop="21dp"
-            android:text="Button" />
+            android:text="Cancel" />
 
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:background="@drawable/custom_button"
             android:layout_alignTop="@+id/button2"
+            android:textColor="@android:color/background_light"
             android:layout_marginEnd="44dp"
             android:text="Register" />
     </RelativeLayout>

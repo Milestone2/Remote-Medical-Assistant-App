@@ -4,47 +4,49 @@ package com.example.android.milestone.models;
 
 public class Contact {
 
-    private String nom;
-    private String prenom;
-    private int tel;
-    private  int tel2;
-    private String email;
+    private String Nom;
+    private String Prenom;
+    private int Phone;
+    private  int Phone2;
+    private String Email;
+    private  String id;
 
 
     public String getNom() {
-        return nom;
+        return Nom;
     }
 
     public String getPrenom() {
-        return prenom;
+        return Prenom;
     }
 
     public int getTel() {
-        return tel;
+        return Phone;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public int getTel2() {
-        return tel2;
+        return Phone2;
     }
 
-    public Contact(String nom, String prenom, String email, int tel, int tel2) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.tel = tel;
-        this.tel2 = tel2;
-        this.email = email;
+    public Contact(String nom, String prenom, String email, int tel, int tel2, String id) {
+        this.Nom = nom;
+        this.Prenom = prenom;
+        this.Phone = tel;
+        this.Phone2 = tel2;
+        this.Email = email;
+        this.id = id;
     }
 
     //constructeur test
     public Contact() {
-        this.nom = "Roodly";
-        this.prenom = "Emmanuel";
-        this.tel = 37396810;
-        this.tel2 = 33271774;
-        this.email = "emmanuelroodly@yahoo.fr";
+        this.Nom = "Roodly";
+        this.Prenom = "Emmanuel";
+        this.Phone = 37396810;
+        this.Phone2 = 33271774;
+        this.Email = "emmanuelroodly@yahoo.fr";
     }
 }

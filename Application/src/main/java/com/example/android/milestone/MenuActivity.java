@@ -18,7 +18,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
+import com.backendless.BackendlessUser;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity;
 import com.example.android.milestone.fragments.ContactFragment2;
@@ -35,6 +37,9 @@ public class MenuActivity extends AppCompatActivity {
     private NavigationView nvDrawer;
     public FloatingActionButton fab;
     FrameLayout fragmentContainer;
+    BackendlessUser user;
+    TextView tvL_user;
+    TextView tvL_email;
 
     // Make sure to be using android.support.v7.app.ActionBarDrawerToggle version.
     // The android.support.v4.app.ActionBarDrawerToggle has been deprecated.
@@ -48,6 +53,7 @@ public class MenuActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle("Home");
+        user = (BackendlessUser) getIntent().getSerializableExtra("userInfo");
 
         // Find our drawer view
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -58,6 +64,10 @@ public class MenuActivity extends AppCompatActivity {
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
         // Setup drawer view
         setupDrawerContent(nvDrawer);
+        tvL_user = (TextView) findViewById(R.id.tvL_user);
+        tvL_email = (TextView) findViewById(R.id.tvL_email);
+        //tvL_user.setText(user.getProperty("Nom").toString());
+
         fragmentContainer = (FrameLayout) findViewById(R.id.flContent);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -148,7 +158,7 @@ public class MenuActivity extends AppCompatActivity {
                 fragmentClass = HistoryFragment.class;
                 break;
             case R.id.nav_profile_fragment:
-                fragmentClass = ProfileFragment.class;
+                fragmentClass = ProfileFragment.newInstance(user).getClass();
                 break;
             case R.id.nav_contact_fragment:
                 fragmentClass =ContactFragment2.class;
