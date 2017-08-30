@@ -46,4 +46,5 @@
     <string name="hintprenom">josha</string>
     <string name="hintmail">josuejosha@domain.com</string>
     <string name="hintnumber">36910370</string>
+    <string name="reset_password">Pour reinitialiser votre mot de passe, Veillez entrez votre adresse mail puis cliquer sur reinitialiser. Vous allez recevoir un courriel donnant la suite des instructions</string>
 </resources>

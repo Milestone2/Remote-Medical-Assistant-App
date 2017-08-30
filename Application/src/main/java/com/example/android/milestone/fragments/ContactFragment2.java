@@ -1,6 +1,7 @@
 package com.example.android.milestone.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -22,8 +23,14 @@ import com.example.android.milestone.adapters.ContactAdapter2;
 import com.example.android.milestone.models.Contact;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
+
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 
 
 public class ContactFragment2 extends Fragment implements AddContact.ContactListener {
@@ -37,6 +44,7 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
     FragmentManager fm;
     MenuActivity menuActivity;//Instance de l'activite principale
     BackendlessUser user;
+
 
     @Nullable
     @Override
@@ -81,6 +89,19 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
         for(int i = 0; i < 2; i++){
             contacts.add(contact);//Fake Data
         }
+        Backendless.Persistence.of(Contact.class).find(new AsyncCallback<List<Contact>>() {
+            @Override
+            public void handleResponse(List<Contact> response) {
+                contacts.addAll(response);
+                Log.d("DEBUG", response.toString());
+            }
+
+            @Override
+            public void handleFault(BackendlessFault fault) {
+                Log.d("DEBUG", fault.getMessage());
+            }
+        });
+
         c_Adapter.notifyDataSetChanged();
     }
 
@@ -88,43 +109,21 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
     //Methode qui recoit l'enregistrement d'un nouveau contact et l'ajoute a la liste
     @Override
     public void onFinishEditContact(String nom, String prenom, String email, int number1, int number2) {
-        Toast.makeText(getContext(), "Adding " + nom + " " + prenom, Toast.LENGTH_SHORT).show();
-        Contact newContact = new Contact(nom, prenom, email, number1, number2, user.getUserId());
+        Contact newContact = new Contact(nom, prenom, email, number1, number2, user.getUserId().toString());
         contacts.add(newContact);
-        user.setProperty("contacts", newContact);
-        HashMap contact = new HashMap();
-        contact.put("Email", email);
-        contact.put("id", user.getUserId());
-        contact.put("Phone", String.valueOf(number1));
-        contact.put("Phone2", String.valueOf(number2));
-        contact.put("Nom", nom);
-        contact.put("Prenom", prenom);
-        Backendless.Data.of("emergency_contact").save(contact, new AsyncCallback<Map>() {
+
+        Backendless.Data.of(Contact.class).save(newContact, new AsyncCallback<Contact>() {
             @Override
-            public void handleResponse(Map response) {
-                Log.d("DEBUG", response.toString());
+            public void handleResponse(Contact response) {
+                Toast.makeText(getContext(), "Contact saved", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void handleFault(BackendlessFault fault) {
-                Log.d("DEBUG", fault.getMessage().toString());
+                Toast.makeText(getContext(), fault.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
 
-        Backendless.UserService.update(user, new AsyncCallback<BackendlessUser>() {
-            @Override
-            public void handleResponse(BackendlessUser response) {
-                Log.d("DEBUG", response.toString());
-                Toast.makeText(getContext(), "Contact Added", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void handleFault(BackendlessFault fault) {
-                Log.d("DEBUG", fault.getMessage().toString());
-                Toast.makeText(getContext(), "Error", Toast.LENGTH_SHORT).show();
-
-            }
-        });
         c_Adapter.notifyDataSetChanged();
     }
 

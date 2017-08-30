@@ -7,6 +7,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.telephony.SmsManager;
@@ -15,6 +16,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +25,7 @@ import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.example.android.bluetoothlegatt.R;
+import com.example.android.milestone.fragments.ResetPasswordFragment;
 import com.example.android.milestone.models.User;
 
 import java.io.IOException;
@@ -37,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     TextView tvRegister;
     Button btLogin;
     private Toolbar toolbar;
+    FragmentManager fm;
+    ResetPasswordFragment reset;
+
+    ProgressBar progressLogin;
 
 
     @Override
@@ -50,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         tvRegister = (TextView) findViewById(R.id.tvRegister);
         btLogin = (Button) findViewById(R.id.btLogIn);
         tvResetPassword = (TextView) findViewById(R.id.tvResetPassword);
+        progressLogin = (ProgressBar) findViewById(R.id.progressLogin);
+        progressLogin.setVisibility(View.INVISIBLE);
+        reset = new ResetPasswordFragment();
+        fm = getSupportFragmentManager();
 
         Backendless.setUrl( Defaults.SERVER_URL );
         Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
@@ -62,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     if (isOnline()) {//check internet
                         if (!TextUtils.isEmpty(etUserName.getText().toString())) {//email not null
                             if (!TextUtils.isEmpty(etPassword.getText().toString())) {//password not null
+                                progressLogin.setVisibility(View.VISIBLE);
                                 logIn(etUserName.getText().toString(), etPassword.getText().toString());//login
                             } else {
                                 Toast.makeText(MainActivity.this, "Please enter a password", Toast.LENGTH_SHORT).show();
@@ -85,6 +97,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(a);
             }
         });
+
+        tvResetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reset.show(fm, "Reset");
+            }
+        });
     }
 
 
@@ -98,12 +117,14 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("DEBUG", response.toString());
                 Intent i = new Intent(getApplicationContext(),MenuActivity.class);
                 i.putExtra("userInfo", response);
+                progressLogin.setVisibility(View.INVISIBLE);
                 startActivity(i);
             }
 
             @Override
             public void handleFault(BackendlessFault fault) {
                 Toast.makeText(MainActivity.this, fault.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                progressLogin.setVisibility(View.INVISIBLE);
                 Log.d("DEBUG", fault.toString());
             }
         });

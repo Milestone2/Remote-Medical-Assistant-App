@@ -59,7 +59,7 @@
             android:enabled="true"
             android:theme="@android:style/Theme.Holo.Light" />
 
-        <activity android:name="com.example.android.milestone.MainActivity">
+        <activity android:name="com.example.android.milestone.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -67,7 +67,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.milestone.Splash"
+            android:name="com.example.android.milestone.MainActivity"
             android:label="@string/title_activity_test" />
         <activity android:name="com.example.android.milestone.MenuActivity" />
         <activity android:name="com.example.android.milestone.SendActivity" />

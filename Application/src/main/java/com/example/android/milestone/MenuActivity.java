@@ -22,7 +22,10 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
+import com.backendless.async.callback.AsyncCallback;
+import com.backendless.exceptions.BackendlessFault;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity;
 import com.example.android.milestone.fragments.ContactFragment2;
@@ -32,6 +35,8 @@ import com.example.android.milestone.fragments.LocalisationFragment;
 import com.example.android.milestone.fragments.ProfileFragment;
 import com.example.android.milestone.fragments.SendFragment;
 import com.example.android.milestone.fragments.SettingFragment;
+
+import weborb.client.Fault;
 
 public class MenuActivity extends AppCompatActivity {
     private DrawerLayout mDrawer;
@@ -261,4 +266,18 @@ public class MenuActivity extends AppCompatActivity {
         return "my Location is Lat:" + latitude + "\nLong:" + longitude;
     }
 
+    public void onLogout(MenuItem item) {
+        Backendless.UserService.logout(new AsyncCallback<Void>() {
+            @Override
+            public void handleResponse(Void response) {
+                Intent i = new Intent(MenuActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+
+            @Override
+            public void handleFault(BackendlessFault fault) {
+                Toast.makeText(MenuActivity.this, fault.getMessage() , Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 }

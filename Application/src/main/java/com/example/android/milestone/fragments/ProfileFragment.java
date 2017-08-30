@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -65,6 +66,7 @@ public class ProfileFragment extends Fragment {
     TextView tvProfilePoids;//user weigth
     TextView tvTempreceiver;
     ImageView ivProfilImage;
+    Button btnModify;
 
 
     @Nullable
@@ -89,6 +91,8 @@ public class ProfileFragment extends Fragment {
         tvGS = (TextView) racine_profil.findViewById(R.id.tvGS);
         tvProfilePoids = (TextView) racine_profil.findViewById(R.id.tvProfilPoids);
         tvTempreceiver = (TextView) racine_profil.findViewById(R.id.tvTempReceiver);
+        btnModify = (Button) racine_profil.findViewById(R.id.btnModify);
+
 
         tvProfilName.setText(userInfo.getProperty("Nom").toString());
         tvProfilDate.setText(userInfo.getEmail());
