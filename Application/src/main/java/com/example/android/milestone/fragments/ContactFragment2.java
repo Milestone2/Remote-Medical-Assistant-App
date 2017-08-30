@@ -70,6 +70,7 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
             }
         });
 
+
         contact = new Contact();
 
         populateContact();
@@ -81,19 +82,19 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-       menuActivity.fab.setVisibility(View.VISIBLE);
+        menuActivity.fab.setVisibility(View.VISIBLE);
     }
 
-    public  void populateContact(){
+    public void populateContact() {
 
-        for(int i = 0; i < 2; i++){
-            contacts.add(contact);//Fake Data
-        }
+        contacts.add(contact);//Fake Data
         Backendless.Persistence.of(Contact.class).find(new AsyncCallback<List<Contact>>() {
             @Override
             public void handleResponse(List<Contact> response) {
                 contacts.addAll(response);
                 Log.d("DEBUG", response.toString());
+                c_Adapter.notifyDataSetChanged();
+
             }
 
             @Override
