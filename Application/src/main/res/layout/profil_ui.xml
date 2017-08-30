@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
@@ -33,7 +35,7 @@
         android:layout_below="@+id/tvProfilName"
         android:layout_toEndOf="@+id/ivProfilImage"
         android:layout_toRightOf="@+id/ivProfilImage"
-        android:text="20/05/1986"
+        tools:text="20/05/1986"
         android:textColor="@android:color/black"
         android:textSize="15sp" />
 
@@ -67,22 +69,14 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tvProfilPoids"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="Poids: 6.5Kg"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+
         <TextView
             android:id="@+id/tv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:text="Poids: 6.5Kg"
+            android:text="adresse"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
         <TextView
@@ -91,18 +85,20 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:text="Poids: 6.5Kg"
+            android:text="telephone"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
         <TextView
-            android:id="@+id/tv3"
+            android:id="@+id/tv7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:text="Poids: 6.5Kg"
+            android:text="Date de naissance"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
+
+
 
         <TextView
             android:id="@+id/tv4"
@@ -122,7 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:text="Medecin affilie:  Midouin Turnier"
+            android:text="Medecin affilie"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
         <TextView
@@ -131,11 +127,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:text="Poids: 6.5Kg"
+            android:text="hauteur"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
+
         <TextView
-            android:id="@+id/tv7"
+            android:id="@+id/tvProfilPoids"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -144,9 +141,11 @@
             android:textColor="@android:color/black"
             android:textSize="15sp" />
 
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop= "0dp">
 
             <TextView
                 android:id="@+id/textView10"
@@ -165,14 +164,36 @@
                 android:layout_marginRight="30dp"
                 android:textColor="@android:color/black"
                 android:textSize="15sp"
-                android:text="32 C" />
+                android:text="32" />
             <Spinner
                 android:id="@+id/spTemperature"
                 android:layout_width="wrap_content"
                 android:textSize="15sp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="ID"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnModify"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/custom_button"
+            android:layout_alignTop="@+id/btnModify"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/background_light"
+            android:text="Modifier le profil" />
 
     </LinearLayout>
 </RelativeLayout>

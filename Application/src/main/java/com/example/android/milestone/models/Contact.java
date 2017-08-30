@@ -1,50 +1,109 @@
 package com.example.android.milestone.models;
 
 
+import java.util.Date;
 
 public class Contact {
 
-    private String nom;
-    private String prenom;
-    private int tel;
-    private  int tel2;
-    private String email;
+    public void setNom(String nom) {
+        Nom = nom;
+    }
+
+    public void setPrenom(String prenom) {
+        Prenom = prenom;
+    }
+
+    public void setPhone(int phone) {
+        Phone = phone;
+    }
+
+    public void setPhone2(int phone2) {
+        Phone2 = phone2;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    private String Nom;
+    private String Prenom;
+    private int Phone;
+    private  int Phone2;
+    private String Email;
+    private  String id;
+    public Date created;
+    public Date updated;
+
+    public String getId() {
+        return id;
+    }
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public void setCreated(Date created) {
+        this.created = created;
+    }
+
+    public Date getUpdated() {
+        return updated;
+    }
+
+    public void setUpdated(Date updated) {
+        this.updated = updated;
+    }
+
+    public String getObjectID() {
+        return objectID;
+    }
+
+    public void setObjectID(String objectID) {
+        this.objectID = objectID;
+    }
+
+    public  String objectID;
 
 
     public String getNom() {
-        return nom;
+        return Nom;
     }
 
     public String getPrenom() {
-        return prenom;
+        return Prenom;
     }
 
     public int getTel() {
-        return tel;
+        return Phone;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public int getTel2() {
-        return tel2;
+        return Phone2;
     }
 
-    public Contact(String nom, String prenom, String email, int tel, int tel2) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.tel = tel;
-        this.tel2 = tel2;
-        this.email = email;
+    public Contact(String Nom, String Prenom, String Email, int Phone, int Phone2, String id) {
+        this.Nom = Nom;
+        this.Prenom = Prenom;
+        this.Phone = Phone;
+        this.Phone2 = Phone2;
+        this.Email = Email;
+        this.id = id;
     }
 
     //constructeur test
     public Contact() {
-        this.nom = "Roodly";
-        this.prenom = "Emmanuel";
-        this.tel = 37396810;
-        this.tel2 = 33271774;
-        this.email = "emmanuelroodly@yahoo.fr";
+        this.Nom = "Roodly";
+        this.Prenom = "Emmanuel";
+        this.Phone = 37396810;
+        this.Phone2 = 33271774;
+        this.Email = "emmanuelroodly@yahoo.fr";
     }
 }

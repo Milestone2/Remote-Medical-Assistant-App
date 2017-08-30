@@ -14,11 +14,18 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.telephony.SmsManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
+import com.backendless.async.callback.AsyncCallback;
+import com.backendless.exceptions.BackendlessFault;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity;
 import com.example.android.milestone.fragments.ContactFragment2;
@@ -29,12 +36,21 @@ import com.example.android.milestone.fragments.ProfileFragment;
 import com.example.android.milestone.fragments.SendFragment;
 import com.example.android.milestone.fragments.SettingFragment;
 
+import weborb.client.Fault;
+
 public class MenuActivity extends AppCompatActivity {
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
     private NavigationView nvDrawer;
     public FloatingActionButton fab;
     FrameLayout fragmentContainer;
+    BackendlessUser user;
+    TextView tvL_user;
+    TextView tvL_email;
+
+    double latitude;
+    double longitude;
+    GPSTracker gps;
 
     // Make sure to be using android.support.v7.app.ActionBarDrawerToggle version.
     // The android.support.v4.app.ActionBarDrawerToggle has been deprecated.
@@ -48,6 +64,7 @@ public class MenuActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle("Home");
+        user = (BackendlessUser) getIntent().getSerializableExtra("userInfo");
 
         // Find our drawer view
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -58,6 +75,10 @@ public class MenuActivity extends AppCompatActivity {
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
         // Setup drawer view
         setupDrawerContent(nvDrawer);
+        tvL_user = (TextView) findViewById(R.id.tvL_user);
+        tvL_email = (TextView) findViewById(R.id.tvL_email);
+        //tvL_user.setText(user.getProperty("Nom").toString());
+
         fragmentContainer = (FrameLayout) findViewById(R.id.flContent);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -65,7 +86,8 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
-
+                sendEmail();
+                sendSMS("37396810");
             }
         });
 
@@ -148,7 +170,7 @@ public class MenuActivity extends AppCompatActivity {
                 fragmentClass = HistoryFragment.class;
                 break;
             case R.id.nav_profile_fragment:
-                fragmentClass = ProfileFragment.class;
+                fragmentClass = ProfileFragment.newInstance(user).getClass();
                 break;
             case R.id.nav_contact_fragment:
                 fragmentClass =ContactFragment2.class;
@@ -191,5 +213,71 @@ public class MenuActivity extends AppCompatActivity {
     public void onBluetooth(MenuItem item) {
         Intent i= new Intent(this, DeviceScanActivity.class);
         startActivity(i);
+    }
+
+    public void sendEmail() {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("plain/text");
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"pbobc10@gmail.com"});
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Medi-Care");
+        intent.putExtra(Intent.EXTRA_TEXT, "Test from Medi-care");
+        if (null != intent.resolveActivity(getPackageManager())) {
+            startActivity(Intent.createChooser(intent, ""));
+        }
+    }
+
+    public void sendSMS(String phone) {
+
+        String sms = "Please help," +  location() + "My Body Diagnostic -\n" + "Heart beat:89BMP\n" + "Oxygen:89% \n" + "Breathing:89 \n" + "Tempeture:89.F \n";
+
+        try {
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(phone, null, sms, null, null);
+            Toast.makeText(getApplicationContext(), "SMS Sent!",
+                    Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(),
+                    "SMS faild, please try again later!",
+                    Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
+
+    }
+
+    private String location() {
+        // TODO Auto-generated method stub
+        // create class object
+        gps = new GPSTracker(getApplicationContext());
+
+        // check if GPS enabled
+        if (gps.canGetLocation()) {
+
+            latitude = gps.getLatitude();
+            longitude = gps.getLongitude();
+            // \n is for new line
+            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+        } else {
+            // can't get location
+            // GPS or Network is not enabled
+            // Ask user to enable GPS/network in settings
+            //gps.showSettingsAlert();
+
+        }
+        return "my Location is Lat:" + latitude + "\nLong:" + longitude;
+    }
+
+    public void onLogout(MenuItem item) {
+        Backendless.UserService.logout(new AsyncCallback<Void>() {
+            @Override
+            public void handleResponse(Void response) {
+                Intent i = new Intent(MenuActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+
+            @Override
+            public void handleFault(BackendlessFault fault) {
+                Toast.makeText(MenuActivity.this, fault.getMessage() , Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

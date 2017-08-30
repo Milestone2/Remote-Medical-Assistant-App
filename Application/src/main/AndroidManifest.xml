@@ -36,6 +36,10 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGEr"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -55,7 +59,7 @@
             android:enabled="true"
             android:theme="@android:style/Theme.Holo.Light" />
 
-        <activity android:name="com.example.android.milestone.MainActivity">
+        <activity android:name="com.example.android.milestone.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -63,7 +67,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.milestone.Splash"
+            android:name="com.example.android.milestone.MainActivity"
             android:label="@string/title_activity_test" />
         <activity android:name="com.example.android.milestone.MenuActivity" />
         <activity android:name="com.example.android.milestone.SendActivity" />

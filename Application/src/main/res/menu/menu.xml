@@ -8,5 +8,11 @@
         android:onClick="onBluetooth"
         android:icon="@drawable/bluetooth2"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Deconnexion"
+        android:onClick="onLogout"
+        app:showAsAction="never" />
 
 </menu>
