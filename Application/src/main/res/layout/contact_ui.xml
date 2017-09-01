@@ -26,7 +26,7 @@
         android:shadowDx="3"
         android:shadowDy="3"
         android:shadowRadius="6"
-        android:text="Emergency contacts"
+        android:text="Contacts d'urgence"
         android:textColor="@android:color/background_light"
         android:textSize="20dp" />
 

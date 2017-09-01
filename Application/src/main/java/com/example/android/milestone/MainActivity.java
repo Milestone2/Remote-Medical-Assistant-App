@@ -7,6 +7,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -76,16 +77,16 @@ public class MainActivity extends AppCompatActivity {
                                 progressLogin.setVisibility(View.VISIBLE);
                                 logIn(etUserName.getText().toString(), etPassword.getText().toString());//login
                             } else {
-                                Toast.makeText(MainActivity.this, "Please enter a password", Toast.LENGTH_SHORT).show();
+                                Snackbar.make(view, "Entrer votre mot de passe", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                             }
                         } else {
-                            Toast.makeText(MainActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+                            Snackbar.make(view, "Entrer votre addresse mail", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                         }
                     }else{
-                        Toast.makeText(MainActivity.this, "No internet ", Toast.LENGTH_SHORT).show();
+                        Snackbar.make(view, "Pas d'accès internet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                     }
                 }else{
-                    Toast.makeText(MainActivity.this, "Use Wi-Fi or mobile network", Toast.LENGTH_SHORT).show();
+                    Snackbar.make(view, "utilisé le Wi-Fi ou le réseau mobile", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                 }
             }
         });

@@ -5,6 +5,7 @@ package com.example.android.milestone.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -68,7 +69,7 @@ public class AddContact extends DialogFragment {
                     etNumber2.getText().clear();
                     dismiss();
                 }else{
-                    Toast.makeText(getContext(), "Tous les champs sont obligatoires", Toast.LENGTH_SHORT).show();
+                    Snackbar.make(view, "Tous les champs sont obligatoires", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
                 }
 
 

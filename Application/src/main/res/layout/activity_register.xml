@@ -19,7 +19,7 @@
         android:shadowRadius="3"
         android:layout_marginBottom="20dp"
         android:background="@color/ThemeColor"
-        android:text="Create a new account"
+        android:text="Creer un nouveau compte"
         android:textColor="@android:color/background_light"
         android:textSize="22sp" />
 
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:padding="5dp"
             android:text="Nom : "
             android:textSize="14sp" />
@@ -41,7 +41,7 @@
         <EditText
             android:id="@+id/etR_name"
             android:layout_width="214dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:textSize="14sp" />
 
         <TextView
@@ -55,6 +55,20 @@
 
         <EditText
             android:id="@+id/etR_prenom"
+            android:layout_width="214dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_adresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Adresse : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_adress"
             android:layout_width="214dp"
             android:textSize="14sp" />
 
@@ -124,7 +138,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:padding="5dp"
-            android:text="email : "
+            android:text="Courriel : "
             android:textSize="14sp" />
 
         <EditText
@@ -139,7 +153,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:padding="5dp"
-            android:text="telephone : "
+            android:text="Téléphone : "
             android:textSize="14sp" />
 
         <EditText
@@ -169,7 +183,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:padding="5dp"
-            android:text="Mot de passe (again) : "
+            android:text="Mot de passe (encore) : "
             android:textSize="14sp" />
 
         <EditText
@@ -187,24 +201,26 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="31dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:background="@drawable/custom_button"
             android:layout_marginStart="56dp"
-            android:textColor="@android:color/background_light"
             android:layout_marginTop="21dp"
-            android:text="Cancel" />
+            android:background="@drawable/custom_button"
+            android:text="@string/cancel"
+            android:textColor="@android:color/background_light" />
 
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="31dp"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/custom_button"
             android:layout_alignTop="@+id/button2"
-            android:textColor="@android:color/background_light"
             android:layout_marginEnd="44dp"
-            android:text="Register" />
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:background="@drawable/custom_button"
+            android:text="Enregistrer"
+            android:textColor="@android:color/background_light" />
     </RelativeLayout>
 </LinearLayout>

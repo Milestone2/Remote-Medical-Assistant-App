@@ -60,6 +60,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
         // Set a Toolbar to replace the ActionBar.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -73,11 +74,15 @@ public class MenuActivity extends AppCompatActivity {
         mDrawer.addDrawerListener(drawerToggle);
 
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
+        //nvDrawer = NavigationView.inflate(getBaseContext(), R.layout.nav_header, savedInstanceState );
         // Setup drawer view
         setupDrawerContent(nvDrawer);
-        tvL_user = (TextView) findViewById(R.id.tvL_user);
-        tvL_email = (TextView) findViewById(R.id.tvL_email);
-        //tvL_user.setText(user.getProperty("Nom").toString());
+
+        View hView = nvDrawer.getHeaderView(0);
+        tvL_user = (TextView)  hView.findViewById(R.id.tvL_user);
+        tvL_email = (TextView) hView.findViewById(R.id.tvL_email);
+        tvL_user.setText(user.getProperty("Nom").toString());
+        tvL_email.setText(user.getEmail());
 
         fragmentContainer = (FrameLayout) findViewById(R.id.flContent);
 

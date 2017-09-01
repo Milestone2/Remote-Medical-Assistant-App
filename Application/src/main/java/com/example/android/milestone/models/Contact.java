@@ -1,9 +1,12 @@
 package com.example.android.milestone.models;
 
 
+import android.os.Parcelable;
+
+import java.io.Serializable;
 import java.util.Date;
 
-public class Contact {
+public class Contact implements Serializable {
 
     public void setNom(String nom) {
         Nom = nom;
@@ -32,11 +35,12 @@ public class Contact {
     private String Nom;
     private String Prenom;
     private int Phone;
-    private  int Phone2;
+    private int Phone2;
     private String Email;
-    private  String id;
+    private String id;
     public Date created;
     public Date updated;
+    public String objectID;
 
     public String getId() {
         return id;
@@ -66,7 +70,7 @@ public class Contact {
         this.objectID = objectID;
     }
 
-    public  String objectID;
+
 
 
     public String getNom() {

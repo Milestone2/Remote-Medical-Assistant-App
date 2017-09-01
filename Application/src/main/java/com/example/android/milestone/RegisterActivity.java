@@ -33,6 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText etR_hauteur;
     EditText etR_groupeS;
     Button btnRegister;
+    EditText etR_adress;
 
 
     @Override
@@ -51,6 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
         etR_hauteur = (EditText) findViewById( R.id.etR_hauteur);
         etR_groupeS = (EditText) findViewById(R.id.etR_GroupeS);
         btnRegister = (Button) findViewById(R.id.btnRegister);
+        etR_adress = (EditText) findViewById(R.id.etR_adress);
 
         Backendless.setUrl( Defaults.SERVER_URL );
         Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
@@ -72,7 +74,8 @@ public class RegisterActivity extends AppCompatActivity {
                                             Double.valueOf(etR_hauteur.getText().toString()),
                                             Double.valueOf(etR_poids.getText().toString()),
                                             etR_birth.getText().toString(),
-                                            etR_groupeS.getText().toString());
+                                            etR_groupeS.getText().toString(),
+                                            etR_adress.getText().toString());
                                 }else{
                                     Toast.makeText(RegisterActivity.this, "No internet ", Toast.LENGTH_SHORT).show();
                                 }
@@ -96,7 +99,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 
-    public void registerUser(String name, String email, String password, String tel, String doctor, double height, double weight, String birth, String gs){
+    public void registerUser(String name, String email, String password, String tel, String doctor, double height, double weight, String birth, String gs, String adresse){
 
         BackendlessUser user = new BackendlessUser();
         user.setEmail(email);
@@ -108,6 +111,7 @@ public class RegisterActivity extends AppCompatActivity {
         user.setProperty("height", height);
         user.setProperty("weight", weight);
         user.setProperty("GS", gs);
+        user.setProperty("address", adresse);
 
 
         Backendless.UserService.register(user, new AsyncCallback<BackendlessUser>() {
