@@ -8,6 +8,11 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 
 import android.support.design.widget.Snackbar;
+import android.support.transition.ChangeBounds;
+import android.support.transition.Fade;
+import android.support.transition.Scene;
+import android.support.transition.TransitionManager;
+import android.support.transition.TransitionSet;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -15,6 +20,7 @@ import android.telephony.SmsManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.EditText;
@@ -68,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         enableViews();
         Backendless.setUrl( Defaults.SERVER_URL );
         Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
+
 
 
 
@@ -152,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("DEBUG", fault.toString());
                 enableViews();
             }
-        });
+        }, true);
     }
 
     //check connection before login
@@ -173,6 +180,19 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e)          { e.printStackTrace(); }
         catch (InterruptedException e) { e.printStackTrace(); }
         return false;
+    }
+
+    private void goToScene(Scene scene) {
+        ChangeBounds changeBounds = new ChangeBounds();
+        Fade fadeOut = new Fade(Fade.OUT);
+        Fade fadeIn = new Fade(Fade.IN);
+        TransitionSet transition = new TransitionSet();
+        transition.setOrdering(TransitionSet.ORDERING_SEQUENTIAL);
+        transition
+                .addTransition(fadeOut)
+                .addTransition(changeBounds)
+                .addTransition(fadeIn);
+        TransitionManager.go(scene, transition);
     }
 
 

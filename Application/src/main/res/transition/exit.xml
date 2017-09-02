@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<transitionManager xmlns:android="http://schemas.android.com/apk/res/android">
 
-</transitionManager>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="sequential">
+
+    <slide android:duration="500" android:slideEdge="left"/>
+    <changeBounds />
+    <slide android:duration="5000" android:slideEdge="right"/>
+
+</transitionSet>
