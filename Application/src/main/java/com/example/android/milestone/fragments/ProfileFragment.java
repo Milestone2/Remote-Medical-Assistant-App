@@ -94,16 +94,21 @@ public class ProfileFragment extends Fragment {
         btnModify = (Button) racine_profil.findViewById(R.id.btnModify);
 
 
-        tvProfilName.setText(userInfo.getProperty("Nom").toString());
-        tvProfilDate.setText(userInfo.getEmail());
-        tv1.setText("Addresse:  "+ userInfo.getProperty("address").toString());
-        tv2.setText("Telephone:  "+ userInfo.getProperty("Telephone").toString());
-        tv3.setText("ID:  " + userInfo.getUserId());
-        tv5.setText("Docteur (ref.)  : " + userInfo.getProperty("Doctor").toString());
-        tvGS.setText("G.S: " + userInfo.getProperty("GS"));
-        tv6.setText("Hauteur:  " + userInfo.getProperty("height").toString() + " m");
-        tv7.setText("Date de naissance: " + userInfo.getProperty("birth").toString());
-        tvProfilePoids.setText("Poids:  " + userInfo.getProperty("weight").toString() + " Kg");
+
+        try {
+            tvProfilName.setText(userInfo.getProperty("Nom").toString());
+            tvProfilDate.setText(userInfo.getEmail());
+            tv1.setText("Addresse:  " + userInfo.getProperty("address").toString());
+            tv2.setText("Telephone:  " + userInfo.getProperty("Telephone").toString());
+            tv3.setText("ID:  " + userInfo.getUserId());
+            tv5.setText("Docteur (ref.)  : " + userInfo.getProperty("Doctor").toString());
+            tvGS.setText("G.S: " + userInfo.getProperty("GS"));
+            tv6.setText("Hauteur:  " + userInfo.getProperty("height").toString() + " m");
+            tv7.setText("Date de naissance: " + userInfo.getProperty("birth").toString());
+            tvProfilePoids.setText("Poids:  " + userInfo.getProperty("weight").toString() + " Kg");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
 
 

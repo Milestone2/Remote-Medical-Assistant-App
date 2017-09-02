@@ -1,9 +1,14 @@
 package com.example.android.milestone.models;
 
 
+import android.os.Parcelable;
+
+import java.io.Serializable;
 import java.util.Date;
 
-public class Contact {
+import weborb.service.MapToProperty;
+
+public class Contact implements Serializable {
 
     public void setNom(String nom) {
         Nom = nom;
@@ -32,11 +37,18 @@ public class Contact {
     private String Nom;
     private String Prenom;
     private int Phone;
-    private  int Phone2;
+    private int Phone2;
     private String Email;
-    private  String id;
+    private String id;
+
+    @MapToProperty( property = "created" )
     public Date created;
+
+    @MapToProperty( property = "updated" )
     public Date updated;
+
+    @MapToProperty( property = "objectId" )
+    public String objectId;
 
     public String getId() {
         return id;
@@ -59,14 +71,14 @@ public class Contact {
     }
 
     public String getObjectID() {
-        return objectID;
+        return objectId;
     }
 
-    public void setObjectID(String objectID) {
-        this.objectID = objectID;
+    public void setObjectID(String objectId) {
+        this.objectId = objectId;
     }
 
-    public  String objectID;
+
 
 
     public String getNom() {

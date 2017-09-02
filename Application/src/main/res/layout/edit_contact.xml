@@ -37,47 +37,53 @@
             android:id="@+id/etCM_nom"
             android:layout_width="180dp"
             android:layout_marginRight="8dp"
+            android:textSize="14dp"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="Prenom: "
+            android:text="Prénom: "
             android:textSize="16dp" />
 
         <EditText
             android:id="@+id/etCM_prenom"
             android:layout_width="180dp"
             android:layout_marginRight="8dp"
+            android:textSize="14dp"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="Telephone (mobile): "
+            android:text="@string/tel_mobile"
             android:textSize="16dp" />
 
         <EditText
             android:id="@+id/etCM_tel1"
-            android:layout_width="180dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_height="wrap_content" />
+            android:textSize="14dp" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Telephone (bureau): "
             android:layout_marginLeft="10dp"
+            android:text="@string/tel_bureau"
             android:textSize="16dp" />
 
         <EditText
             android:id="@+id/etCM_tel2"
-            android:layout_width="180dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_height="wrap_content" />
+            android:textSize="14dp" />
 
 
         <TextView
@@ -91,6 +97,7 @@
             android:id="@+id/etCM_email"
             android:layout_width="180dp"
             android:layout_marginRight="8dp"
+            android:textSize="14dp"
             android:layout_height="wrap_content" />
 
         <TextView
@@ -106,9 +113,9 @@
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
+            android:textSize="14dp"
             android:textColor="@color/colorPrimary"
-            android:layout_marginTop="15dp"
-            android:textSize="16dp" />
+            android:layout_marginTop="15dp" />
 
     </GridLayout>
     <GridLayout
@@ -120,7 +127,7 @@
             android:text="annule"
             android:id="@+id/btnAnnule"
             android:layout_width="wrap_content"
-            android:layout_height="37dp"
+            android:layout_height="31dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/custom_button"
             android:textColor="@android:color/background_light"
@@ -131,7 +138,7 @@
             android:id="@+id/btnEnregistrer"
             android:layout_width="wrap_content"
             android:layout_marginBottom="8dp"
-            android:layout_height="36dp"
+            android:layout_height="31dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:textColor="@android:color/background_light"

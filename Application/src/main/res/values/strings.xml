@@ -20,7 +20,7 @@
     <string name="no_data">No data</string>
     <string name="connected">Connected</string>
     <string name="disconnected">Disconnected</string>
-    <string name="title_devices">BLE Device Scan</string>
+    <string name="title_devices">Medi-Care</string>
     <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
 
     <string name="unknown_device">Unknown device</string>
@@ -30,8 +30,8 @@
     <!-- Menu items -->
     <string name="menu_connect">Connect</string>
     <string name="menu_disconnect">Disconnect</string>
-    <string name="menu_scan">Scan</string>
-    <string name="menu_stop">Stop</string>
+    <string name="menu_scan">Recherche</string>
+    <string name="menu_stop">Arrêter </string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_test">Test</string>
 
@@ -45,6 +45,10 @@
     <string name="hintName">Josue</string>
     <string name="hintprenom">josha</string>
     <string name="hintmail">josuejosha@domain.com</string>
-    <string name="hintnumber">36910370</string>
+    <string name="hintnumber">37303030</string>
     <string name="reset_password">Pour reinitialiser votre mot de passe, Veillez entrez votre adresse mail puis cliquer sur reinitialiser. Vous allez recevoir un courriel donnant la suite des instructions</string>
+    <string name="cancel">annulé</string>
+    <string name="save">Enregistrer</string>
+    <string name="tel_mobile">Téléphone (mobile)</string>
+    <string name="tel_bureau">Téléphone (Bureau)</string>
 </resources>

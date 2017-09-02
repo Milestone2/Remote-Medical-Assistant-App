@@ -3,6 +3,7 @@ package com.example.android.milestone;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -17,8 +18,10 @@ import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.example.android.bluetoothlegatt.R;
+import com.example.android.milestone.fragments.DatePicker;
 
 import java.io.IOException;
+import java.util.Date;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -33,6 +36,10 @@ public class RegisterActivity extends AppCompatActivity {
     EditText etR_hauteur;
     EditText etR_groupeS;
     Button btnRegister;
+    EditText etR_adress;
+
+    DatePicker d; // objet instancie du fragment DatePicker
+    FragmentManager fh;
 
 
     @Override
@@ -44,16 +51,28 @@ public class RegisterActivity extends AppCompatActivity {
         etR_email = (EditText) findViewById(R.id.etR_email);
         etR_Telephone = (EditText) findViewById(R.id.etR_telephone);
         etR_pass1 = (EditText) findViewById(R.id.etR_pass1);
-        etR_pass2 = (
-                EditText) findViewById(R.id.etR_pass2);
+        etR_pass2 = (EditText) findViewById(R.id.etR_pass2);
         etR_poids = (EditText) findViewById(R.id.etR_poids);
         etR_birth = (EditText) findViewById(R.id.etR_birth);
         etR_hauteur = (EditText) findViewById( R.id.etR_hauteur);
         etR_groupeS = (EditText) findViewById(R.id.etR_GroupeS);
         btnRegister = (Button) findViewById(R.id.btnRegister);
+        etR_adress = (EditText) findViewById(R.id.etR_adress);
+
+        d = new DatePicker(); // initialisation d'un fragment DatePicker
+        fh = getSupportFragmentManager();
+
+
 
         Backendless.setUrl( Defaults.SERVER_URL );
         Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
+
+        etR_birth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                d.show(fh, "Date");
+            }
+        });
 
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +91,8 @@ public class RegisterActivity extends AppCompatActivity {
                                             Double.valueOf(etR_hauteur.getText().toString()),
                                             Double.valueOf(etR_poids.getText().toString()),
                                             etR_birth.getText().toString(),
-                                            etR_groupeS.getText().toString());
+                                            etR_groupeS.getText().toString(),
+                                            etR_adress.getText().toString());
                                 }else{
                                     Toast.makeText(RegisterActivity.this, "No internet ", Toast.LENGTH_SHORT).show();
                                 }
@@ -96,7 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 
-    public void registerUser(String name, String email, String password, String tel, String doctor, double height, double weight, String birth, String gs){
+    public void registerUser(String name, String email, String password, String tel, String doctor, double height, double weight, String birth, String gs, String adresse){
 
         BackendlessUser user = new BackendlessUser();
         user.setEmail(email);
@@ -108,6 +128,7 @@ public class RegisterActivity extends AppCompatActivity {
         user.setProperty("height", height);
         user.setProperty("weight", weight);
         user.setProperty("GS", gs);
+        user.setProperty("address", adresse);
 
 
         Backendless.UserService.register(user, new AsyncCallback<BackendlessUser>() {
@@ -142,5 +163,10 @@ public class RegisterActivity extends AppCompatActivity {
         } catch (IOException e)          { e.printStackTrace(); }
         catch (InterruptedException e) { e.printStackTrace(); }
         return false;
+    }
+
+
+    public void getValueFromChild(int day, int month, int year){
+        etR_birth.setText(day+"/"+month+"/"+year);
     }
 }

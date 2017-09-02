@@ -5,7 +5,7 @@
     android:layout_height="match_parent" android:background="@android:color/background_light">
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingAddContact"
+        android:id="@+id/floatingAddHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
@@ -13,7 +13,7 @@
         android:clickable="true"
         app:backgroundTint="@color/ThemeColor"
         app:layout_behavior="com.example.android.milestone.utils.ScrollAwareFABBehavior"
-        app:layout_anchor="@+id/lvContact"
+        app:layout_anchor="@+id/lvHistory"
         app:layout_anchorGravity="bottom|right|end"
         app:fabSize="normal"
         app:srcCompat="@android:drawable/ic_menu_add" />
@@ -29,24 +29,23 @@
         android:shadowDx="3"
         android:shadowDy="3"
         android:shadowRadius="6"
-        android:text="Contacts d'urgence"
+        android:text="Historique"
         android:textColor="@android:color/background_light"
         android:textSize="20dp" />
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
-        android:id="@+id/swipContainer"
+        android:id="@+id/swipContainer2"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp">
 
         <ListView
-            android:id="@+id/lvContact"
+            android:id="@+id/lvHistory"
             android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/background_light"
-            android:divider="@color/cardview_light_background"
-            android:dividerHeight="10.0sp"/>
+            android:dividerHeight="15.0sp"/>
 
 
     </android.support.v4.widget.SwipeRefreshLayout>
