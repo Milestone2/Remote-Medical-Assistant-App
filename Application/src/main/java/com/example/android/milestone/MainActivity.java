@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void handleFault(BackendlessFault fault) {
-                Toast.makeText(MainActivity.this, fault.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                Snackbar.make(getCurrentFocus(), fault.getMessage(), Snackbar.LENGTH_LONG).setAction("Action", null).show();
                 progressLogin.setVisibility(View.INVISIBLE);
                 Log.d("DEBUG", fault.toString());
                 enableViews();
