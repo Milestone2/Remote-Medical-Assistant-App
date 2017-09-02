@@ -63,10 +63,11 @@
 
         <EditText
             android:id="@+id/etCM_tel1"
-            android:layout_width="180dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:textSize="14dp"
-            android:layout_height="wrap_content" />
+            android:textSize="14dp" />
 
 
         <TextView
@@ -78,10 +79,11 @@
 
         <EditText
             android:id="@+id/etCM_tel2"
-            android:layout_width="180dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:textSize="14dp"
-            android:layout_height="wrap_content" />
+            android:textSize="14dp" />
 
 
         <TextView

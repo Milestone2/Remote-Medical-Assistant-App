@@ -84,7 +84,7 @@
         <EditText
             android:id="@+id/etR_poids"
             android:layout_width="214dp"
-            android:inputType="number"
+            android:inputType="number|numberDecimal"
             android:textSize="14sp" />
 
         <TextView
@@ -99,7 +99,7 @@
         <EditText
             android:id="@+id/etR_hauteur"
             android:layout_width="214dp"
-            android:inputType="number"
+            android:inputType="number|numberDecimal"
             android:textSize="14sp" />
 
         <TextView
@@ -128,7 +128,9 @@
         <EditText
             android:id="@+id/etR_birth"
             android:layout_width="214dp"
-            android:inputType="date"
+            android:editable="false"
+            android:clickable="true"
+            android:inputType="none"
             android:textSize="14sp" />
 
 

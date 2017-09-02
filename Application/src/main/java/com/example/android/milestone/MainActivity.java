@@ -16,6 +16,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckedTextView;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -25,6 +26,7 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.backendless.persistence.local.UserTokenStorageFactory;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.fragments.ResetPasswordFragment;
 import com.example.android.milestone.models.User;
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     FragmentManager fm;
     ResetPasswordFragment reset;
-
+    public String userToken;
     ProgressBar progressLogin;
 
 
@@ -57,19 +59,24 @@ public class MainActivity extends AppCompatActivity {
         etPassword = (EditText) findViewById(R.id.etPassword);
         tvRegister = (TextView) findViewById(R.id.tvRegister);
         btLogin = (Button) findViewById(R.id.btLogIn);
+
         tvResetPassword = (TextView) findViewById(R.id.tvResetPassword);
         progressLogin = (ProgressBar) findViewById(R.id.progressLogin);
         progressLogin.setVisibility(View.INVISIBLE);
         reset = new ResetPasswordFragment();
         fm = getSupportFragmentManager();
-
+        enableViews();
         Backendless.setUrl( Defaults.SERVER_URL );
         Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
+
+
+
 
 
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                disableViews();
                 if (isNetworkAvailable()) {//check connection
                     if (isOnline()) {//check internet
                         if (!TextUtils.isEmpty(etUserName.getText().toString())) {//email not null
@@ -78,15 +85,19 @@ public class MainActivity extends AppCompatActivity {
                                 logIn(etUserName.getText().toString(), etPassword.getText().toString());//login
                             } else {
                                 Snackbar.make(view, "Entrer votre mot de passe", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                                enableViews();
                             }
                         } else {
                             Snackbar.make(view, "Entrer votre addresse mail", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                            enableViews();
                         }
                     }else{
                         Snackbar.make(view, "Pas d'accès internet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                        enableViews();
                     }
                 }else{
                     Snackbar.make(view, "utilisé le Wi-Fi ou le réseau mobile", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                    enableViews();
                 }
             }
         });
@@ -108,6 +119,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void enableViews(){
+        etUserName.setEnabled(true);
+        etPassword.setEnabled(true);
+        tvResetPassword.setClickable(true);
+        tvRegister.setClickable(true);
+    }
+    public  void disableViews(){
+        etUserName.setEnabled(false);
+        etPassword.setEnabled(false);
+        tvResetPassword.setClickable(false);
+        tvRegister.setClickable(false);
+    }
 
 
     public  void logIn(String email, String password){
@@ -127,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, fault.getMessage().toString(), Toast.LENGTH_SHORT).show();
                 progressLogin.setVisibility(View.INVISIBLE);
                 Log.d("DEBUG", fault.toString());
+                enableViews();
             }
         });
     }

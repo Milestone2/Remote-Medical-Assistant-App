@@ -1,80 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/ThemeColor"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:padding="5dp"
-        android:shadowColor="@android:color/black"
-        android:shadowDx="3"
-        android:shadowDy="3"
-        android:shadowRadius="6"
-        android:layout_marginBottom="20dp"
-        android:text="Recuperation de mot de passe"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp" />
+<android.support.design.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/reset_password"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="16dp"
-        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/etReset"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textSize="16dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="15dp">
 
-        <Button
-            android:id="@+id/btnReinit"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginTop="34dp"
-            android:background="@drawable/custom_button"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="Reinitialiser"
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ThemeColor"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:id="@+id/tvinforecuperation"
+            android:padding="5dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="6"
+            android:layout_marginBottom="20dp"
+            android:text="Recuperation de mot de passe"
             android:textColor="@android:color/background_light"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:textSize="20dp" />
 
-        <ImageButton
-            android:id="@+id/ibCancel"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:background="@drawable/custom_button"
-            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
-            android:layout_marginTop="23dp"
-            android:layout_below="@+id/btnReinit"
-            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_password"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/etReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp">
+
+            <Button
+                android:id="@+id/btnReinit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/custom_button"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Reinitialiser"
+                android:textColor="@android:color/background_light"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/ibCancel"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:background="@drawable/custom_button"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/btnReinit"
+                android:layout_centerHorizontal="true" />
 
 
-    </RelativeLayout>
+        </RelativeLayout>
 
 
-</LinearLayout>
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

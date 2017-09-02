@@ -76,6 +76,8 @@
             android:inputType="textPassword"
             android:textColor="@android:color/black" />
 
+
+
         <TextView
             android:id="@+id/tvResetPassword"
             android:layout_width="match_parent"

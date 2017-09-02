@@ -100,17 +100,17 @@
 
     <EditText
         android:id="@+id/etNumber1"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
         android:ems="10"
         android:hint="number"
         android:inputType="phone"
-        android:textSize="15sp"
-        android:layout_marginRight="10dp"
-        android:layout_alignBaseline="@+id/textView11"
-        android:layout_alignBottom="@+id/textView11"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -126,16 +126,16 @@
 
     <EditText
         android:id="@+id/etNumber2"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        android:textSize="15sp"
-        android:layout_marginRight="10dp"
         android:layout_alignBaseline="@+id/textView12"
         android:layout_alignBottom="@+id/textView12"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/btSaveContact"

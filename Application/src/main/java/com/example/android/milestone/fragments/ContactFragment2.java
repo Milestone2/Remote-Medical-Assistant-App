@@ -11,6 +11,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +24,8 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.backendless.persistence.DataQueryBuilder;
+import com.backendless.property.ObjectProperty;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.MainActivity;
 import com.example.android.milestone.MenuActivity;
@@ -53,6 +56,8 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
     MenuActivity menuActivity;//Instance de l'activite principale
     BackendlessUser user;
     EditContact editContact;
+    DataQueryBuilder c_query;
+    public SwipeRefreshLayout swipeContainer;
 
 
 
@@ -65,6 +70,7 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
         user = Backendless.UserService.CurrentUser();
         flAddContact = (FloatingActionButton) racine_contact.findViewById(R.id.floatingAddContact);
         lvContact = (ListView) racine_contact.findViewById(R.id.lvContact);
+        swipeContainer = (SwipeRefreshLayout) racine_contact.findViewById(R.id.swipContainer);
         menuActivity = (MenuActivity) getActivity();
         menuActivity.fab.setVisibility(View.INVISIBLE);//Remplacer le FAB d'urgence par le FAB d'ajout de contact
         fm = getFragmentManager();
@@ -72,6 +78,15 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
         quickAdd = new AddContact();
 
 
+
+
+        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                c_Adapter.clear();
+                populateContact();
+            }
+        });
 
         //Ouverture du DialogFragment AddContact pour enregistre un nouveau contact
         flAddContact.setOnClickListener(new View.OnClickListener() {
@@ -97,8 +112,9 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
                 Backendless.Persistence.of(Contact.class).remove(contacts.get(position), new AsyncCallback<Long>() {
                     @Override
                     public void handleResponse(Long response) {
-                        Toast.makeText(getContext(), "Contact efface", Toast.LENGTH_SHORT).show();
+                        Snackbar.make(getView(), "Contact effacé", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                         contacts.remove(position);
+                        c_Adapter.notifyDataSetChanged();
                     }
 
                     @Override
@@ -128,24 +144,29 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
 
     public void populateContact() {
 
-        contacts.add(contact);//Fake Data
+        String query = "id = " + "'" + user.getUserId() + "'";
+        c_query = DataQueryBuilder.create();
+        c_query.setWhereClause(query);
+
         if(isOnline()) {
-            Backendless.Persistence.of(Contact.class).find(new AsyncCallback<List<Contact>>() {
+            Backendless.Persistence.of(Contact.class).find( c_query,new AsyncCallback<List<Contact>>() {
                 @Override
                 public void handleResponse(List<Contact> response) {
                     contacts.addAll(response);
                     Log.d("DEBUG", response.toString());
                     c_Adapter.notifyDataSetChanged();
+                    swipeContainer.setRefreshing(false);
 
                 }
 
                 @Override
                 public void handleFault(BackendlessFault fault) {
                     Log.d("DEBUG", fault.getMessage());
+                    swipeContainer.setRefreshing(false);
                 }
             });
         }else{
-            Toast.makeText(getContext(), "No internet", Toast.LENGTH_SHORT).show();
+            Snackbar.make(getView(), "Pas d'acces internet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
         }
 
         c_Adapter.notifyDataSetChanged();
@@ -161,13 +182,13 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
         Backendless.Data.of(Contact.class).save(newContact, new AsyncCallback<Contact>() {
             @Override
             public void handleResponse(Contact response) {
-                Toast.makeText(getContext(), "Contact saved", Toast.LENGTH_SHORT).show();
+                Snackbar.make(getView(), "Contact enregistré", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                 c_Adapter.notifyDataSetChanged();
             }
 
             @Override
             public void handleFault(BackendlessFault fault) {
-                Toast.makeText(getContext(), fault.getMessage(), Toast.LENGTH_SHORT).show();
+                Snackbar.make(getView(), fault.getMessage(), Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
     }

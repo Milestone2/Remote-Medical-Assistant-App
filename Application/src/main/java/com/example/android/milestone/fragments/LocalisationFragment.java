@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.GPSTracker;
 import com.google.android.gms.common.ConnectionResult;
@@ -55,6 +57,7 @@ public class LocalisationFragment extends Fragment implements OnMapReadyCallback
     private final static String KEY_LOCATION = "location";
 
 
+
     boolean isGPSEnabled = false;
     // Flag for network status
     boolean isNetworkEnabled = false;
@@ -78,9 +81,12 @@ public class LocalisationFragment extends Fragment implements OnMapReadyCallback
 
     TextView tvLongitude;
     TextView tvLatitude;
+    TextView tvgpsName;
     GoogleMap map;
     MapView mapView;
     SupportMapFragment supportMapFragment;
+
+    BackendlessUser userInfo;
 
 
     @Override
@@ -89,10 +95,13 @@ public class LocalisationFragment extends Fragment implements OnMapReadyCallback
         View racine = inflater.inflate(R.layout.localisation_ui, container, false);
         tvLongitude = (TextView) racine.findViewById(R.id.tvLongitude);
         tvLatitude = (TextView) racine.findViewById(R.id.tvLatitude);
+        tvgpsName = (TextView) racine.findViewById(R.id.tvgpsName);
         mapView = (MapView) racine.findViewById(R.id.mapView);
 
+        userInfo = Backendless.UserService.CurrentUser();
         tvLongitude.setText(String.valueOf(151));
         tvLatitude.setText(String.valueOf(-34));
+        tvgpsName.setText(userInfo.getProperty("Nom").toString());
 
         mapView.onCreate(savedInstanceState);
         mapView.onResume();

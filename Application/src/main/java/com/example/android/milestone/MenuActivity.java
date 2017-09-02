@@ -1,5 +1,7 @@
 package com.example.android.milestone;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.design.widget.FloatingActionButton;
@@ -26,6 +28,7 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.backendless.persistence.DataQueryBuilder;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity;
 import com.example.android.milestone.fragments.ContactFragment2;
@@ -47,6 +50,8 @@ public class MenuActivity extends AppCompatActivity {
     BackendlessUser user;
     TextView tvL_user;
     TextView tvL_email;
+
+    public DataQueryBuilder contactQuery;
 
     double latitude;
     double longitude;
@@ -223,7 +228,7 @@ public class MenuActivity extends AppCompatActivity {
     public void sendEmail() {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("plain/text");
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"pbobc10@gmail.com"});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"emmanuelroodly@yahoo.fr"});
         intent.putExtra(Intent.EXTRA_SUBJECT, "Medi-Care");
         intent.putExtra(Intent.EXTRA_TEXT, "Test from Medi-care");
         if (null != intent.resolveActivity(getPackageManager())) {
@@ -272,6 +277,36 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void onLogout(MenuItem item) {
+        signOut();
+    }
+
+    @Override
+    public void onBackPressed() {
+        signOutDialog();
+    }
+
+    public void signOutDialog(){
+        AlertDialog alertDialog = new AlertDialog.Builder(MenuActivity.this).create();
+        alertDialog.setTitle("Deconnection");
+        alertDialog.setMessage("Voulez-vous vous deconnectez ?");
+        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Oui", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                signOut();
+
+            }
+        });
+        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Non", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        alertDialog.show();
+    }
+
+    public void signOut(){
         Backendless.UserService.logout(new AsyncCallback<Void>() {
             @Override
             public void handleResponse(Void response) {
@@ -284,5 +319,18 @@ public class MenuActivity extends AppCompatActivity {
                 Toast.makeText(MenuActivity.this, fault.getMessage() , Toast.LENGTH_SHORT).show();
             }
         });
+
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+
 }

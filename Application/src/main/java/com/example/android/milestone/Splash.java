@@ -1,5 +1,6 @@
 package com.example.android.milestone;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
