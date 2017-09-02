@@ -46,6 +46,10 @@ public class GPSTracker extends Service implements LocationListener {
     // Declaring a Location Manager
     protected LocationManager locationManager;
 
+    public Location currentLocation() {
+        return location;
+    }
+
     public GPSTracker(Context context) {
         this.mContext = context;
         getLocation();
@@ -69,7 +73,7 @@ public class GPSTracker extends Service implements LocationListener {
             } else {
                 this.canGetLocation = true;
                 if (isNetworkEnabled) {
-                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                         // TODO: Consider calling
                         //    ActivityCompat#requestPermissions
                         // here to request the missing permissions, and then overriding
@@ -93,7 +97,7 @@ public class GPSTracker extends Service implements LocationListener {
                 }
                 // If GPS enabled, get latitude/longitude using GPS Services
                 if (isGPSEnabled) {
-                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                         // TODO: Consider calling
                         //    ActivityCompat#requestPermissions
                         // here to request the missing permissions, and then overriding
@@ -207,6 +211,7 @@ public class GPSTracker extends Service implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
+        this.location = location;
     }
 
 

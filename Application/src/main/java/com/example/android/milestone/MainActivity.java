@@ -2,6 +2,7 @@ package com.example.android.milestone;
 
 
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 
 import android.support.v7.app.AppCompatActivity;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        GPSTracker gps = new GPSTracker(this);
     }
 
 }

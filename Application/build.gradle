@@ -21,10 +21,13 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.backendless:backendless:4.0.+'
+    compile 'com.backendless:backendless:4.0.3'
     compile 'com.google.android.gms:play-services:11.0.1'
     compile 'com.google.android.gms:play-services-maps:11.0.1'
     compile 'com.google.maps.android:android-maps-utils:0.5+'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:animated-vector-drawable:25.3.1'
+    compile 'com.android.support:mediarouter-v7:25.3.1'
 
 }
 
@@ -43,6 +46,7 @@ android {
     defaultConfig {
         minSdkVersion 18
         targetSdkVersion 25
+        multiDexEnabled true
     }
 
     compileOptions {
