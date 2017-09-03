@@ -54,6 +54,8 @@ public class Splash extends Activity {
                     @Override
                     public void handleFault(BackendlessFault fault) {
                         Log.d("DEBUG", fault.getMessage());
+                        Toast.makeText(Splash.this, fault.getMessage(), Toast.LENGTH_SHORT).show();
+                        start = new Intent(Splash.this, MainActivity.class);
                     }
                 });
             }else{
@@ -74,23 +76,6 @@ public class Splash extends Activity {
         }, time);
     }
 
-    public  void logIn(String email, String password){
-        Backendless.UserService.login(email, password, new AsyncCallback<BackendlessUser>() {
-            @Override
-            public void handleResponse(BackendlessUser response) {
-                Toast.makeText(Splash.this, "Log in", Toast.LENGTH_SHORT).show();
-                Log.d("DEBUG", response.toString());
-            }
 
-            @Override
-            public void handleFault(BackendlessFault fault) {
-                Snackbar.make(getCurrentFocus(), fault.getMessage(), Snackbar.LENGTH_LONG).setAction("Action", null).show();
-
-                Log.d("DEBUG", fault.toString());
-            }
-        });
-
-
-    }
 
 }

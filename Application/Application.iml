@@ -117,6 +117,8 @@
     <orderEntry type="library" exported="" name="play-services-ads-11.0.1" level="project" />
     <orderEntry type="library" exported="" name="firebase-config-11.0.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-gass-11.0.1" level="project" />
+    <orderEntry type="library" exported="" name="android-maps-utils-0.5" level="project" />
+    <orderEntry type="library" exported="" name="backendless-4.0.3" level="project" />
     <orderEntry type="library" exported="" name="palette-v7-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-instantapps-11.0.1" level="project" />
     <orderEntry type="library" exported="" name="glide-3.8.0" level="project" />
