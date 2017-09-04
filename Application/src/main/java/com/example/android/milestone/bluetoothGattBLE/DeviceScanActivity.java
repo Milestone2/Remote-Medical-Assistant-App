@@ -37,6 +37,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.bluetoothlegatt.R;
+import com.project.library.util.BleScanTool;
 
 import java.util.ArrayList;
 
@@ -101,7 +102,8 @@ public class DeviceScanActivity extends ListActivity {
         switch (item.getItemId()) {
             case R.id.menu_scan:
                 mLeDeviceListAdapter.clear();
-                scanLeDevice(true);
+                //scanLeDevice(true);
+                bleScanDevice(true);
                 break;
             case R.id.menu_stop:
                 scanLeDevice(false);
@@ -179,6 +181,11 @@ public class DeviceScanActivity extends ListActivity {
             mBluetoothAdapter.stopLeScan(mLeScanCallback);
         }
         invalidateOptionsMenu();
+    }
+
+    public void bleScanDevice(final boolean enable ) {
+        BleScanTool bleScanTool = BleScanTool.getInstance();
+        bleScanTool.scanLeDevice(enable);
     }
 
     // Adapter for holding devices found through scanning.
