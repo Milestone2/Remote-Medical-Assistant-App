@@ -7,6 +7,8 @@ import com.backendless.exceptions.BackendlessException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import weborb.service.MapToProperty;
+
 public class User {
 
     //Attributs
@@ -22,6 +24,17 @@ public class User {
     private String adress;
     private String ownerId;
     private String email;
+
+    public String getObjectId() {
+        return objectId;
+    }
+
+    public void setObjectId(String objectId) {
+        this.objectId = objectId;
+    }
+
+    @MapToProperty( property = "objectId" )
+    private String objectId;
 
     public String getTelephone() {
         return telephone;

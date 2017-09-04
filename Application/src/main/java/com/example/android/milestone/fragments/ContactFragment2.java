@@ -8,6 +8,11 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.transition.ChangeBounds;
+import android.support.transition.Fade;
+import android.support.transition.Scene;
+import android.support.transition.TransitionManager;
+import android.support.transition.TransitionSet;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -78,7 +83,9 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
         quickAdd = new AddContact();
 
 
-
+        final Scene scene = Scene.getSceneForLayout(container, R.layout.contact_ui, getActivity());
+        View secondView = inflater.inflate(R.layout.addcontact_ui, container, false);
+        final Scene scene2 = new Scene(container, (ViewGroup)secondView);
 
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -212,6 +219,19 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
         } catch (IOException e)          { e.printStackTrace(); }
         catch (InterruptedException e) { e.printStackTrace(); }
         return false;
+    }
+
+    private void goToScene(Scene scene) {
+        ChangeBounds changeBounds = new ChangeBounds();
+        Fade fadeOut = new Fade(Fade.OUT);
+        Fade fadeIn = new Fade(Fade.IN);
+        TransitionSet transition = new TransitionSet();
+        transition.setOrdering(TransitionSet.ORDERING_SEQUENTIAL);
+        transition
+                .addTransition(fadeOut)
+                .addTransition(changeBounds)
+                .addTransition(fadeIn);
+        TransitionManager.go(scene, transition);
     }
 
 }
