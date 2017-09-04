@@ -95,7 +95,7 @@ public class MenuActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                 sendEmail();
                 sendSMS("37396810");
             }
@@ -277,12 +277,14 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void onLogout(MenuItem item) {
-        signOut();
+        signOutDialog();
+        //signOut();
     }
 
     @Override
     public void onBackPressed() {
-        signOutDialog();
+        //signOutDialog();
+        System.exit(0);
     }
 
     public void signOutDialog(){

@@ -93,11 +93,11 @@ public class AddContact extends DialogFragment {
     }
 
 
+
     //Definition de l'interface permettant d'envoyer les informations du contact pour les enregistrer
     public interface ContactListener{
         void onFinishEditContact(String nom, String prenom, String email, int number1, int number2);
     }
-
     //methode utilisant l'interface pour faire passer les donnees
     public void SendContactInfo(){
         ContactListener listener = (ContactListener) getTargetFragment();

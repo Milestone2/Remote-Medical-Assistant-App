@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Résumé :"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etSummary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/tvSummary"
+        android:layout_below="@+id/tvSummary"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etSummary"
+        android:layout_below="@+id/etSummary"
+        android:layout_marginTop="29dp"
+        android:text="Détail : "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/tvDetail"
+        android:layout_below="@+id/tvDetail"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btSavehistory"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_alignTop="@+id/btH_cancel"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="53dp"
+        android:layout_toEndOf="@+id/btH_cancel"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="@string/save"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btH_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/custom_button"
+        android:text="@string/cancel"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/etDetail"
+        android:layout_alignStart="@+id/etDetail" />
+
+    <ImageButton
+        android:id="@+id/ibCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etSummary"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/date" />
+
+    <TextView
+        android:id="@+id/tvdateH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ibCalendar"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/ibCalendar"
+        tools:text="....."
+        android:textColor="@android:color/black" />
+</RelativeLayout>

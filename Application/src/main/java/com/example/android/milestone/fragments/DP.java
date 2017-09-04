@@ -1,6 +1,5 @@
 package com.example.android.milestone.fragments;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
@@ -10,24 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.bluetoothlegatt.R;
-import com.example.android.milestone.RegisterActivity;
 
 import java.util.Calendar;
 import java.util.Date;
 
-import static com.example.android.bluetoothlegatt.R.id.etEmail;
-import static com.example.android.bluetoothlegatt.R.id.etName;
-import static com.example.android.bluetoothlegatt.R.id.etNumber1;
-import static com.example.android.bluetoothlegatt.R.id.etNumber2;
-import static com.example.android.bluetoothlegatt.R.id.etPrenom;
-import static weborb.util.ThreadContext.context;
-
 /**
- * Created by Emmanuel Roodly on 02/09/2017.
+ * Created by Emmanuel Roodly on 03/09/2017.
  */
 
+public class DP extends DialogFragment{
 
-public class DatePicker extends DialogFragment {
     android.widget.DatePicker myDate;
     public Date selectedDate;
 
@@ -73,7 +64,7 @@ public class DatePicker extends DialogFragment {
     }
 
     public void SendDateInfo(){
-        listener = (DateListener) getTargetFragment();
+        listener = (DateListener) getContext();
         listener.onFinishEditDate(day, month, year);
     }
 
