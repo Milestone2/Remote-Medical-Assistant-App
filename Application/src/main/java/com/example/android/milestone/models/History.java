@@ -16,7 +16,7 @@ import weborb.service.MapToProperty;
  * Created by Emmanuel Roodly on 01/09/2017.
  */
 
-public class History implements Serializable{
+public class History {
 
     public String gethId() {
         return hId;
@@ -26,12 +26,12 @@ public class History implements Serializable{
         this.hId = hId;
     }
 
-    public String getObjectID() {
-        return objectID;
+    public String getObjectId() {
+        return objectId;
     }
 
-    public void setObjectID(String objectID) {
-        this.objectID = objectID;
+    public void setObjectId(String objectId) {
+        this.objectId = objectId;
     }
 
     public Date getCreated() {
@@ -74,14 +74,7 @@ public class History implements Serializable{
         this.detail = detail;
     }
 
-    @MapToProperty( property = "hId" )
-    public String hId;
 
-    @MapToProperty( property = "objectID" )
-    public String objectID;
-
-    @MapToProperty( property = "created" )
-    public Date created;
 
     public Date getUpdated() {
         return updated;
@@ -91,20 +84,25 @@ public class History implements Serializable{
         this.updated = updated;
     }
 
-    @MapToProperty( property = "updated" )
-    public Date updated;
+    public String getOwnerId() {
+        return ownerId;
+    }
 
-    @MapToProperty( property = "summary" )
-    public String summary;
+    public void setOwnerId(String ownerId) {
+        this.ownerId = ownerId;
+    }
 
-    @MapToProperty( property = "doctor" )
-    public String doctor;
 
-    @MapToProperty( property = "dateH" )
-    public String dateH;
+    private String hId;
+    private String objectId;
+    private Date created;
+    private String ownerId;
+    private Date updated;
+    private String summary;
+    private String doctor;
+    private String dateH;
+    private String detail;
 
-    @MapToProperty( property = "detail" )
-    public String detail;
 
     public History(){
         this.summary = "summary1";
@@ -121,7 +119,7 @@ public class History implements Serializable{
         String date = df.format(hashMap.get("dateH"));
 
         History history = new History();
-        try{
+        try {
             history.dateH = date;
             history.detail = hashMap.get("detail").toString();
             history.doctor = hashMap.get("doctor").toString();
@@ -129,7 +127,6 @@ public class History implements Serializable{
         }catch (Exception e){
             e.printStackTrace();
         }
-
         return history;
     }
 

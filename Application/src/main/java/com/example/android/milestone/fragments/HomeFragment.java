@@ -36,7 +36,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View racine_status = inflater.inflate(R.layout.home_ui, container, false);
+        View racine_status = inflater.inflate(R.layout.home, container, false);
         tvHeartInfo = (TextView) racine_status.findViewById(R.id.tvHeartInfo);
         tvLungInfo = (TextView) racine_status.findViewById(R.id.tvLungInfo);
         tvTempInfo = (TextView) racine_status.findViewById(R.id.tvTempInfo);

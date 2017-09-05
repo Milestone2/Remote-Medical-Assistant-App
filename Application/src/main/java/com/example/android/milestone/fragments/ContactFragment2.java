@@ -173,7 +173,7 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
                 }
             });
         }else{
-            Snackbar.make(getView(), "Pas d'acces internet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+            Toast.makeText(getContext(), "Pas d'acces internet", Toast.LENGTH_SHORT).show();
         }
 
         c_Adapter.notifyDataSetChanged();

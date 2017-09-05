@@ -97,11 +97,13 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
 
         histories.add(history);//Fake Data
         if(isOnline()) {
-           /* Backendless.Persistence.of(History.class).find(new AsyncCallback<List<History>>() {
+            /*
+           Backendless.Persistence.of(History.class).find(new AsyncCallback<List<History>>() {
                 @Override
                 public void handleResponse(List<History> response) {
                     //histories.addAll(response);
                     Log.d("DEBUG", response.toString());
+                    histories.addAll(response);
                     historyAdapter.notifyDataSetChanged();
                     swipeContainer2.setRefreshing(false);
 
@@ -118,7 +120,7 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
                 @Override
                 public void handleResponse(List<Map> response) {
                     Log.d("DEBUG", response.toString());
-                   histories.addAll(History.fromMap(response));
+                    histories.addAll(History.fromMap(response));
                     historyAdapter.notifyDataSetChanged();
                     swipeContainer2.setRefreshing(false);
                 }
@@ -130,7 +132,7 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
                 }
             });
         }else{
-            Snackbar.make(getView(), "No internet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+            Toast.makeText(getContext(), "Pas d'acces internet", Toast.LENGTH_SHORT).show();
         }
 
         historyAdapter.notifyDataSetChanged();
@@ -174,5 +176,6 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
         }else{
             Snackbar.make(getView(), "No internet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
         }
+        historyAdapter.notifyDataSetChanged();
     }
 }
