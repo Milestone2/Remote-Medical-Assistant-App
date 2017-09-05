@@ -55,7 +55,6 @@ public class Splash extends Activity {
                     @Override
                     public void handleFault(BackendlessFault fault) {
                         Log.d("DEBUG", fault.getMessage());
-                        Toast.makeText(Splash.this, fault.getMessage(), Toast.LENGTH_SHORT).show();
                         //start = new Intent(Splash.this, MainActivity.class);
                     }
                 });
