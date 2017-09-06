@@ -55,7 +55,7 @@ public class MenuActivity extends AppCompatActivity {
 
     double latitude;
     double longitude;
-    GPSTracker gps;
+    public static GPSTracker gps;
 
     // Make sure to be using android.support.v7.app.ActionBarDrawerToggle version.
     // The android.support.v4.app.ActionBarDrawerToggle has been deprecated.
@@ -65,6 +65,8 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        gps = new GPSTracker(this);
+
 
         // Set a Toolbar to replace the ActionBar.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -238,7 +240,7 @@ public class MenuActivity extends AppCompatActivity {
 
     public void sendSMS(String phone) {
 
-        String sms = "Please help," +  location() + "My Body Diagnostic -\n" + "Heart beat:89BMP\n" + "Oxygen:89% \n" + "Breathing:89 \n" + "Tempeture:89.F \n";
+        String sms = "Please help," +  "location()" + "My Body Diagnostic -\n" + "Heart beat:89BMP\n" + "Oxygen:89% \n" + "Breathing:89 \n" + "Tempeture:89.F \n";
 
         try {
             SmsManager smsManager = SmsManager.getDefault();
@@ -254,7 +256,7 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
-    private String location() {
+    /*private String location() {
         // TODO Auto-generated method stub
         // create class object
         gps = new GPSTracker(getApplicationContext());
@@ -274,7 +276,7 @@ public class MenuActivity extends AppCompatActivity {
 
         }
         return "my Location is Lat:" + latitude + "\nLong:" + longitude;
-    }
+    } */
 
     public void onLogout(MenuItem item) {
         signOut();

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="play-services-awareness-11.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/b759b753d7db190edb26196e26381609a5fbf75c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b759b753d7db190edb26196e26381609a5fbf75c/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\transition\\transition.xml",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\transition\\transition.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\transition\\fadein.xml",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\transition\\fadein.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\transition\\changebounds.xml",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\transition\\changebounds.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\transition\\exit.xml",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\transition\\exit.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\transition\\fadedout.xml",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\transition\\fadedout.xml"
+    }
+]

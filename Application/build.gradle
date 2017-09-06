@@ -29,6 +29,8 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile "com.daimajia.swipelayout:library:1.2.0@aar"
     compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.android.support:mediarouter-v7:25.3.1'
+    compile 'com.android.support:multidex:1.0.1'
 
 }
 
@@ -47,6 +49,7 @@ android {
     defaultConfig {
         minSdkVersion 18
         targetSdkVersion 25
+        multiDexEnabled true
     }
 
     compileOptions {
