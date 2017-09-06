@@ -1,6 +1,7 @@
 package com.example.android.milestone.fragments;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -71,10 +72,8 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
         flAddHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 addHistory.setTargetFragment(HistoryFragment.this, 300);
                 addHistory.show(fm, "Adding an History");
-
             }
         });
 
@@ -87,34 +86,20 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
             }
         });
 
-        history = new History();
-        populateHistory();
-
+        swipeContainer2.setRefreshing(true);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                populateHistory();
+            }
+        }, 1000);
         return racine_contact;
     }
 
     private void populateHistory() {
 
-        histories.add(history);//Fake Data
+        //histories.add(history);//Fake Data
         if(isOnline()) {
-            /*
-           Backendless.Persistence.of(History.class).find(new AsyncCallback<List<History>>() {
-                @Override
-                public void handleResponse(List<History> response) {
-                    //histories.addAll(response);
-                    Log.d("DEBUG", response.toString());
-                    histories.addAll(response);
-                    historyAdapter.notifyDataSetChanged();
-                    swipeContainer2.setRefreshing(false);
-
-                }
-
-                @Override
-                public void handleFault(BackendlessFault fault) {
-                    Log.d("DEBUG", fault.getMessage());
-                    swipeContainer2.setRefreshing(false);
-                }
-            });*/
 
             Backendless.Persistence.of("History").find(new AsyncCallback<List<Map>>() {
                 @Override
@@ -133,6 +118,7 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
             });
         }else{
             Toast.makeText(getContext(), "Pas d'acces internet", Toast.LENGTH_SHORT).show();
+            swipeContainer2.setRefreshing(false);
         }
 
         historyAdapter.notifyDataSetChanged();
@@ -160,6 +146,7 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
         history.put("dateH", histDate);
         history.put("doctor", user.getProperty("Doctor"));
         if (isOnline()) {
+            swipeContainer2.setRefreshing(true);
             Backendless.Data.of("History").save(history, new AsyncCallback<Map>() {
                 @Override
                 public void handleResponse(Map response) {
@@ -177,5 +164,6 @@ public class HistoryFragment extends Fragment implements AddHistory.HistoryListe
             Snackbar.make(getView(), "No internet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
         }
         historyAdapter.notifyDataSetChanged();
+        swipeContainer2.setRefreshing(false);
     }
 }

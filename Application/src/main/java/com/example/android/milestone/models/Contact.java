@@ -36,6 +36,15 @@ public class Contact implements Serializable {
 
     private String Nom;
     private String Prenom;
+
+    public int getPhone() {
+        return Phone;
+    }
+
+    public int getPhone2() {
+        return Phone2;
+    }
+
     private int Phone;
     private int Phone2;
     private String Email;
@@ -117,5 +126,14 @@ public class Contact implements Serializable {
         this.Phone = 37396810;
         this.Phone2 = 33271774;
         this.Email = "emmanuelroodly@yahoo.fr";
+    }
+
+    public Contact(Contact e){
+        this.Nom = e.getNom();
+        this.Prenom = e.getPrenom();
+        this.Phone = e.getPhone();
+        this.Phone2 = e.getPhone2();
+        e.objectId = e.getObjectID();
+        this.Email = e.getEmail();
     }
 }

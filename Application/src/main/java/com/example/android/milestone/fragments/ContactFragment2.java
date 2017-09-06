@@ -1,9 +1,12 @@
 package com.example.android.milestone.fragments;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -63,6 +66,7 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
     EditContact editContact;
     DataQueryBuilder c_query;
     public SwipeRefreshLayout swipeContainer;
+    public AlertDialog alertDialog;
 
 
 
@@ -116,17 +120,22 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
         lvContact.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
+                alertDialog = new AlertDialog.Builder(getContext()).create();
+                alertDialog.setMessage("Suppression de "+ contacts.get(position).getNom() +"...");
+                alertDialog.show();
                 Backendless.Persistence.of(Contact.class).remove(contacts.get(position), new AsyncCallback<Long>() {
                     @Override
                     public void handleResponse(Long response) {
                         Snackbar.make(getView(), "Contact effacé", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                         contacts.remove(position);
                         c_Adapter.notifyDataSetChanged();
+                        alertDialog.dismiss();
                     }
 
                     @Override
                     public void handleFault(BackendlessFault fault) {
-                        Toast.makeText(getContext(), fault.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "erreur", Toast.LENGTH_SHORT).show();
+                        alertDialog.dismiss();
                     }
                 });
 
@@ -136,9 +145,13 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
 
 
         contact = new Contact();
-
-        populateContact();
-
+        swipeContainer.setRefreshing(true);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                populateContact();
+            }
+        }, 1000);
         return racine_contact;
     }
 
@@ -174,6 +187,7 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
             });
         }else{
             Toast.makeText(getContext(), "Pas d'acces internet", Toast.LENGTH_SHORT).show();
+            swipeContainer.setRefreshing(false);
         }
 
         c_Adapter.notifyDataSetChanged();
@@ -183,19 +197,23 @@ public class ContactFragment2 extends Fragment implements AddContact.ContactList
     //Methode qui recoit l'enregistrement d'un nouveau contact et l'ajoute a la liste
     @Override
     public void onFinishEditContact(String nom, String prenom, String email, int number1, int number2) {
-        Contact newContact = new Contact(nom, prenom, email, number1, number2, user.getUserId().toString());
+        Contact newContact = new Contact(nom, prenom, email, number1, number2, user.getUserId());
         contacts.add(newContact);
-
+        alertDialog = new AlertDialog.Builder(getContext()).create();
+        alertDialog.setMessage("Enregistrement de "+ nom );
+        alertDialog.show();
         Backendless.Data.of(Contact.class).save(newContact, new AsyncCallback<Contact>() {
             @Override
             public void handleResponse(Contact response) {
                 Snackbar.make(getView(), "Contact enregistré", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                 c_Adapter.notifyDataSetChanged();
+                alertDialog.dismiss();
             }
 
             @Override
             public void handleFault(BackendlessFault fault) {
-                Snackbar.make(getView(), fault.getMessage(), Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                Snackbar.make(getView(), "erreur", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                alertDialog.dismiss();
             }
         });
     }
