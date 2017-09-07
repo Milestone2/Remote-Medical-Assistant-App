@@ -46,7 +46,8 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        android:largeHeap="true">
+        android:largeHeap="true"
+        android:name="android.support.multidex.MultiDexApplication">
         <activity
             android:name="com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity"
             android:label="@string/app_name"

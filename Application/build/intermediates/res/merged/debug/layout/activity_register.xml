@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.milestone.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:layout_marginBottom="20dp"
+        android:background="@color/ThemeColor"
+        android:text="Creer un nouveau compte"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/tvR_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="Nom : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_name"
+            android:layout_width="214dp"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Docteur ref. : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_prenom"
+            android:layout_width="214dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_adresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Adresse : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_adress"
+            android:layout_width="214dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/poids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Poids (Kg) : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_poids"
+            android:layout_width="214dp"
+            android:inputType="number|numberDecimal"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_hauteur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Hauteur (m): "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_hauteur"
+            android:layout_width="214dp"
+            android:inputType="number|numberDecimal"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_groupeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Groupe Sanguin: "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_GroupeS"
+            android:layout_width="70dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Date de naissance : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_birth"
+            android:layout_width="214dp"
+            android:editable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvR_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Courriel : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_email"
+            android:layout_width="214dp"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Téléphone : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_telephone"
+            android:layout_width="214dp"
+            android:inputType="phone"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_pass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Mot de passe : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_pass1"
+            android:layout_width="214dp"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvR_pass2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Mot de passe (encore) : "
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etR_pass2"
+            android:layout_width="214dp"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+
+    </GridLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/cancel"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/button2"
+            android:layout_marginEnd="44dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:background="@drawable/custom_button"
+            android:text="Enregistrer"
+            android:textColor="@android:color/background_light" />
+    </RelativeLayout>
+</LinearLayout>
