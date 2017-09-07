@@ -4,6 +4,8 @@ package com.example.android.milestone.adapters;
 
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -44,7 +46,7 @@ public class ContactAdapter2 extends ArrayAdapter<Contact> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        Contact aContact = getItem(position);
+        final Contact aContact = getItem(position);
         ViewHolder viewHolder;
 
         if(convertView == null){
@@ -69,6 +71,19 @@ public class ContactAdapter2 extends ArrayAdapter<Contact> {
         viewHolder.tvTelNumber.setText(String.valueOf(aContact.getTel()));
         viewHolder.tvEmail.setText(aContact.getEmail().toString());
         viewHolder.tvTelNumber2.setText(String.valueOf(aContact.getTel2()));
+
+        viewHolder.tvTelNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:"+aContact.getTel()));
+                if (callIntent.resolveActivity(getContext().getPackageManager() ) != null) {
+                    getContext().startActivity(callIntent);
+                }
+            }
+        });
+
+
 
         return convertView;
     }

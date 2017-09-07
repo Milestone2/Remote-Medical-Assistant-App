@@ -19,12 +19,14 @@ import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.example.android.bluetoothlegatt.R;
+import com.example.android.milestone.fragments.AddHistory;
+import com.example.android.milestone.fragments.DP;
 import com.example.android.milestone.fragments.DatePicker;
 
 import java.io.IOException;
 import java.util.Date;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity implements DP.DateListener{
 
     EditText etR_nom;
     EditText etR_doctor;
@@ -39,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
     Button btnRegister;
     EditText etR_adress;
 
-    DatePicker d; // objet instancie du fragment DatePicker
+    DP d; // objet instancie du fragment DatePicker
     FragmentManager fh;
 
 
@@ -60,7 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister = (Button) findViewById(R.id.btnRegister);
         etR_adress = (EditText) findViewById(R.id.etR_adress);
 
-        d = new DatePicker(); // initialisation d'un fragment DatePicker
+        d = new DP(); // initialisation d'un fragment DatePicker
         fh = getSupportFragmentManager();
 
 
@@ -167,6 +169,11 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     public void getValueFromChild(int day, int month, int year){
+        etR_birth.setText(day+"/"+month+"/"+year);
+    }
+
+    @Override
+    public void onFinishEditDate(int day, int month, int year) {
         etR_birth.setText(day+"/"+month+"/"+year);
     }
 }

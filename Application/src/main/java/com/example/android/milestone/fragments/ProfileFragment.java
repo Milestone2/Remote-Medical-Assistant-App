@@ -1,6 +1,7 @@
 package com.example.android.milestone.fragments;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +34,9 @@ import java.io.IOException;
 import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.MainActivity;
 
@@ -40,6 +45,7 @@ import java.util.Calendar;
 import java.util.List;
 
 import static android.media.MediaRecorder.VideoSource.CAMERA;
+import static weborb.util.ThreadContext.context;
 
 /**
  * Created by Owner on 8/19/2017.
@@ -67,6 +73,7 @@ public class ProfileFragment extends Fragment {
     TextView tvTempreceiver;
     ImageView ivProfilImage;
     Button btnModify;
+    ProgressBar pbImage;
 
 
     @Nullable
@@ -89,6 +96,7 @@ public class ProfileFragment extends Fragment {
         tvProfilName = (TextView) racine_profil.findViewById(R.id.tvProfilName);
         tvProfilDate = (TextView) racine_profil.findViewById(R.id.tvProfilDate);
         tvGS = (TextView) racine_profil.findViewById(R.id.tvGS);
+        pbImage = (ProgressBar) racine_profil.findViewById(R.id.pbImage);
         tvProfilePoids = (TextView) racine_profil.findViewById(R.id.tvProfilPoids);
         tvTempreceiver = (TextView) racine_profil.findViewById(R.id.tvTempReceiver);
         btnModify = (Button) racine_profil.findViewById(R.id.btnModify);
@@ -140,6 +148,25 @@ public class ProfileFragment extends Fragment {
                 showPictureDialog();
             }
         });
+        pbImage.setVisibility(View.VISIBLE);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Glide.with(getContext()).load(userInfo.getProperty("imgpath")).listener(new RequestListener<Object, GlideDrawable>() {
+                    @Override
+                    public boolean onException(Exception e, Object model, Target<GlideDrawable> target, boolean isFirstResource) {
+                        pbImage.setVisibility(View.GONE);
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onResourceReady(GlideDrawable resource, Object model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
+                        pbImage.setVisibility(View.GONE);
+                        return false;
+                    }
+                }).placeholder(R.drawable.ic_profil).fitCenter().into(ivProfilImage);
+            }
+        }, 500);
 
         return racine_profil;
     }
@@ -223,9 +250,7 @@ public class ProfileFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != GALLERY && resultCode != CAMERA) {
-            return;
-        }
+
         if (requestCode == GALLERY) {
             if (data != null) {
                 Uri contentURI = data.getData();
@@ -243,9 +268,9 @@ public class ProfileFragment extends Fragment {
             }
 
         } else if (requestCode == CAMERA) {
-            Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
-            ivProfilImage.setImageBitmap(thumbnail);
-            Glide.with(getContext()).load(thumbnail).into(ivProfilImage);
+            Bitmap photo = (Bitmap) data.getExtras().get("data");
+            ivProfilImage.setImageBitmap(photo);
+            //Glide.with(getContext()).load(photo).into(ivProfilImage);
             //saveImage(thumbnail);
             Toast.makeText(getContext(), "Image Saved!", Toast.LENGTH_SHORT).show();
         }

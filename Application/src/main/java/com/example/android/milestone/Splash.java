@@ -39,10 +39,11 @@ public class Splash extends Activity {
         start = new Intent (Splash.this, MainActivity.class);
 
         userToken = UserTokenStorageFactory.instance().getStorage().get();
+        start = new Intent(Splash.this, MainActivity.class);
 
         if( userToken != null && !userToken.equals( "" ) ) {
             String currentUserId = Backendless.UserService.loggedInUser();
-            if(!currentUserId.equals("")){
+            if (!currentUserId.equals("")) {
                 Backendless.UserService.findById(currentUserId, new AsyncCallback<BackendlessUser>() {
                     @Override
                     public void handleResponse(BackendlessUser response) {
@@ -54,9 +55,7 @@ public class Splash extends Activity {
 
                     @Override
                     public void handleFault(BackendlessFault fault) {
-                        Log.d("DEBUG", fault.getMessage());
-                        Toast.makeText(Splash.this, fault.getMessage(), Toast.LENGTH_SHORT).show();
-
+                        Log.d("DEBUG", fault.getMessage());               
                     }
                 });
             }

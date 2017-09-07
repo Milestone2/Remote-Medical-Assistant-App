@@ -7,8 +7,8 @@ package com.example.android.milestone;
 public class Defaults
 {
   
-public static final String APPLICATION_ID = "1C3FB26F-2AA1-A8D3-FFC7-DBA0F2DFBD00";
-public static final String API_KEY = "70AB1CE1-61A5-DB9C-FF1F-095F448C2100";
+public static final String APPLICATION_ID = "DA9B7F0B-3E31-3FFF-FF82-22B88B91D000";
+public static final String API_KEY = "26CAC899-CC62-48FD-FF39-51B368C57C00";
 public static final String SERVER_URL = "https://api.backendless.com";
     
 }

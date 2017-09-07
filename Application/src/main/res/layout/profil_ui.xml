@@ -202,4 +202,13 @@
             android:textColor="@android:color/background_light" />
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbImage"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvGS"
+        android:layout_alignEnd="@+id/ivProfilImage"
+        android:layout_marginEnd="13dp" />
 </RelativeLayout>

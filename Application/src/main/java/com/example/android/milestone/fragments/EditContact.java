@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.backendless.Backendless;
+import com.backendless.async.callback.AsyncCallback;
+import com.backendless.exceptions.BackendlessFault;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.models.Contact;
 import com.google.android.gms.cast.Cast;
@@ -64,6 +68,29 @@ public class EditContact extends DialogFragment {
             }
         });
 
+        btnEnregistrer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mycontact.setEmail(etCM_email.getText().toString());
+                mycontact.setNom(etCM_nom.getText().toString());
+                mycontact.setPrenom(etCM_prenom.getText().toString());
+                mycontact.setPhone(Integer.valueOf(etCM_tel1.getText().toString()));
+                mycontact.setPhone2(Integer.valueOf(etCM_tel2.getText().toString()));
+                Backendless.Persistence.of(Contact.class).save(mycontact, new AsyncCallback<Contact>() {
+                    @Override
+                    public void handleResponse(Contact response) {
+                        Log.d("DEBUG", response.toString());
+                        dismiss();
+                    }
+
+                    @Override
+                    public void handleFault(BackendlessFault fault) {
+                        Log.d("DEBUG", fault.getMessage());
+                    }
+                });
+            }
+        });
+
 
         return root;
     }
@@ -86,6 +113,10 @@ public class EditContact extends DialogFragment {
 
 
     public void setContact(Contact econtact){
-        mycontact = econtact;
+        mycontact = new Contact(econtact);
+    }
+
+    public void onEditing(){
+
     }
 }

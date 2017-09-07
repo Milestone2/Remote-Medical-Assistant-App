@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -17,6 +18,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,6 +32,7 @@ import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.backendless.persistence.DataQueryBuilder;
 import com.example.android.bluetoothlegatt.R;
+import com.example.android.milestone.adapters.ContactAdapter2;
 import com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity;
 import com.example.android.milestone.fragments.ContactFragment2;
 import com.example.android.milestone.fragments.HistoryFragment;
@@ -38,6 +41,10 @@ import com.example.android.milestone.fragments.LocalisationFragment;
 import com.example.android.milestone.fragments.ProfileFragment;
 import com.example.android.milestone.fragments.SendFragment;
 import com.example.android.milestone.fragments.SettingFragment;
+import com.example.android.milestone.models.Contact;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import weborb.client.Fault;
 
@@ -50,6 +57,9 @@ public class MenuActivity extends AppCompatActivity {
     BackendlessUser user;
     TextView tvL_user;
     TextView tvL_email;
+
+    public ArrayList<Contact> c;//Listes des contacts a afficher
+    DataQueryBuilder c_query;
 
     public DataQueryBuilder contactQuery;
 
@@ -74,6 +84,7 @@ public class MenuActivity extends AppCompatActivity {
         toolbar.setTitle("Home");
         user = (BackendlessUser) getIntent().getSerializableExtra("userInfo");
 
+        c = new ArrayList<>();
         // Find our drawer view
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerToggle = setupDrawerToggle();
@@ -91,15 +102,20 @@ public class MenuActivity extends AppCompatActivity {
         tvL_user.setText(user.getProperty("Nom").toString());
         tvL_email.setText(user.getEmail());
 
+        loadContact();
+
         fragmentContainer = (FrameLayout) findViewById(R.id.flContent);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
-                sendEmail();
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                //sendEmail();
                 sendSMS("37396810");
+                for(int i = 0; i < c.size(); i++){
+                    sendSMS(String.valueOf(c.get(i).getTel()));
+                }
             }
         });
 
@@ -111,6 +127,24 @@ public class MenuActivity extends AppCompatActivity {
         }
 
 
+    }
+
+    public void loadContact(){
+        String query = "id = " + "'" + user.getUserId() + "'";
+        c_query = DataQueryBuilder.create();
+        c_query.setWhereClause(query);
+        Backendless.Persistence.of(Contact.class).find( c_query,new AsyncCallback<List<Contact>>() {
+            @Override
+            public void handleResponse(List<Contact> response) {
+                c.addAll(response);
+                Log.d("DEBUG", response.toString());
+            }
+
+            @Override
+            public void handleFault(BackendlessFault fault) {
+                Log.d("DEBUG", fault.getMessage());
+            }
+        });
     }
 
     private ActionBarDrawerToggle setupDrawerToggle() {
@@ -228,13 +262,17 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void sendEmail() {
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setType("plain/text");
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"emmanuelroodly@yahoo.fr"});
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Medi-Care");
-        intent.putExtra(Intent.EXTRA_TEXT, "Test from Medi-care");
-        if (null != intent.resolveActivity(getPackageManager())) {
-            startActivity(Intent.createChooser(intent, ""));
+        String uriText =
+                "mailto:email@provider.com" +
+                        "?subject=" + Uri.encode("some subject text here") +
+                        "&body=" + Uri.encode("some text here");
+
+        Uri uri = Uri.parse(uriText);
+
+        Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
+        sendIntent.setData(uri);
+        if (sendIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(Intent.createChooser(sendIntent, "Send email"));
         }
     }
 
@@ -279,12 +317,14 @@ public class MenuActivity extends AppCompatActivity {
     } */
 
     public void onLogout(MenuItem item) {
-        signOut();
+        signOutDialog();
+        //signOut();
     }
 
     @Override
     public void onBackPressed() {
         signOutDialog();
+        //System.exit(0);
     }
 
     public void signOutDialog(){
@@ -309,11 +349,12 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void signOut(){
+        Intent i = new Intent(MenuActivity.this, MainActivity.class);
         Backendless.UserService.logout(new AsyncCallback<Void>() {
             @Override
             public void handleResponse(Void response) {
-                Intent i = new Intent(MenuActivity.this, MainActivity.class);
-                startActivity(i);
+
+
             }
 
             @Override
@@ -321,7 +362,7 @@ public class MenuActivity extends AppCompatActivity {
                 Toast.makeText(MenuActivity.this, fault.getMessage() , Toast.LENGTH_SHORT).show();
             }
         });
-
+        startActivity(i);
     }
 
     @Override

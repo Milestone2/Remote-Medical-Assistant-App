@@ -8,7 +8,7 @@
         android:id="@+id/floatingHeart"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="50dp"
         app:backgroundTint="@color/ThemeColor"
         android:clickable="true"
@@ -19,7 +19,7 @@
         android:id="@+id/floatingTemp"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="340dp"
         app:backgroundTint="@color/ThemeColor"
         android:clickable="true"
@@ -30,7 +30,7 @@
         android:id="@+id/floatingLung"
         android:layout_width="100dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="200dp"
+        android:layout_marginLeft="230dp"
         android:layout_marginTop="200dp"
         android:clickable="true"
         app:backgroundTint="@color/ThemeColor"
@@ -58,15 +58,14 @@
             android:id="@+id/tvInfo3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="112dp"
+            android:layout_marginTop="114dp"
             android:text="Rythme pulmonaire: "
             android:textColor="@color/ThemeColor"
             android:textSize="15sp"
             android:textStyle="bold"
             android:layout_marginRight="9dp"
             android:layout_marginLeft="25dp"
-            android:layout_below="@+id/tvHeartInfo"
-            android:layout_alignEnd="@+id/tvTempInfo" />
+            android:layout_below="@+id/tvHeartInfo" />
 
         <TextView
             android:id="@+id/tvInfo4"
@@ -91,7 +90,7 @@
             android:layout_alignStart="@+id/tvHeartInfo"
             android:layout_marginBottom="27dp"
             android:paddingLeft="10dp"
-            android:text="Rythme cardiaque moyen:"
+            android:text="Rythme cardiaque :"
             android:textColor="@color/ThemeColor"
             android:textSize="15sp"
             android:textStyle="bold" />
