@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvContactEdit"
+        android:layout_height="wrap_content"
+        android:background="@color/ThemeColor"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:layout_marginBottom="20dp"
+        android:text="Modifier un contact"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Nom: "
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etCM_nom"
+            android:layout_width="180dp"
+            android:layout_marginRight="8dp"
+            android:textSize="14dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Prénom: "
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etCM_prenom"
+            android:layout_width="180dp"
+            android:layout_marginRight="8dp"
+            android:textSize="14dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tel_mobile"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etCM_tel1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tel_bureau"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etCM_tel2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="courriel: "
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etCM_email"
+            android:layout_width="180dp"
+            android:layout_marginRight="8dp"
+            android:textSize="14dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="ID: "
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvCM_id"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp" />
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:text="annule"
+            android:id="@+id/btnAnnule"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@android:color/background_light"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:text="enregistrer"
+            android:id="@+id/btnEnregistrer"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_height="31dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/custom_button"
+            android:layout_marginRight="30dp"/>
+    </GridLayout>
+
+
+</LinearLayout>

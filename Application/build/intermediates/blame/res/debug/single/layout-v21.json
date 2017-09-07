@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\a8c65dbd731a02718171e46409b7c5b7e3d69295\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\activity_main.xml",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\layout-v21\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

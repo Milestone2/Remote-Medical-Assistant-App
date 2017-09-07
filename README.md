@@ -1,4 +1,4 @@
-# Final Project - *Medi-Care*
+# Final Project | *Medi-Care*
 
 ** Medi-Care ** is a Remote Medical Assistant android app that allows method of transferring data from a mobile health system In a cloud-mobile environment.
 
@@ -6,27 +6,32 @@ Time spent: **X** hours spent in total
 
 ## User Stories
 
-**Scenario 1:**
+The following **required** functionality is completed:
 
-* [ ] User can **Register to Medi-Care** 
-* [ ] User must be able to register his relatives in his directory.
-* [ ] User can see the history of his / her state of health.
-* [ ] The application will ask the patient for health status every ten minutes (followingThe characteristics in his profile)
-	* [ ]  The questions should be simple as: How are you?
-* [ ] Upon receipt of the response "I am OK", the system If the response is not recognized, it will be directed to the cloud to be analysis. If the cloud fails to make the necessary correspondence, an assistant Human must understand the message and take action.
+**required features**
+
+* [x] User can **Register to Medi-Care** 
+* [x] User can **Log In to Medi-Care** 
+* [x] User can **add emergency contacts to Medi-Care** 
+	* [x] User can **modify and/or  delete emergency contacts to Medi-Care**
+* [x] User can **recover password on Medi-Care**
+* [x] User can **send  emergency's sms and/or email to thier relatives in one click**
+	* [x] emergency's sms and/or email contains healt diagnostic(Heart beat, oxygen, temperature) , location of the user
+* [x] User can see the history of his / her state of health.
+* [x] User can see their medical profil on App.
+* [x] User can connect App with their smart watch
+* [x] User can see their location.
+
+
+
 * [ ] If no movement is detected at a time period does not match the usual sleep time or, if the response has been recognized as "not feeling well", an e-mail, an SMS will be generated to his relatives.
  
 
-**Scenario 2:**
+**Bonus features**
 * [ ] The system checks the duration for which no movement is detected by the accelerometer.
-
-
-The following **required** functionality is completed:
-* [*] Smart bracelet Bracelet: Fitness Activity For test.
-* [*] Connect to the Smart Bracelet.
-* [*] show the current status from the smart bracelet during an intervel of time.
-* [ ] Read Data From the Smart Bracelet.
-* [ ] Send sms, e-mail, localization in case of alert to ones relatives.
+* [ ] The application will ask the patient for health status every ten minutes (followingThe characteristics in his profile)
+	* [ ]  The questions should be simple as: How are you?
+* [ ] Upon receipt of the response "I am OK", the system If the response is not recognized, it will be directed to the cloud to be analysis. If the cloud fails to make the necessary correspondence, an assistant Human must understand the message and take action.
 
 The following **optional** features are implemented:
 
@@ -43,13 +48,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/wFJbnkO.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src='https://github.com/Milestone2/Remote-medical-assistant/blob/master/image.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src='3-detail.png' width='' alt='Video Walkthrough' />
-<img src='4-detail.png' width='' alt='Video Walkthrough' />
-<img src='5-detail.png' width='' alt='Video Walkthrough' />
-<img src='6-detail.png' width='' alt='Video Walkthrough' />
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 
 
@@ -63,7 +64,6 @@ Describe any challenges encountered while building the app.
 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
 - [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
-- android-BluetoothLeGatt  - To connect the Smart Bracelet to the android Phone.
 
 ## License
 

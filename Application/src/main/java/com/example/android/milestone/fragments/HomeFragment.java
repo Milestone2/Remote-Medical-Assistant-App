@@ -11,12 +11,10 @@ import android.widget.TextView;
 
 import com.example.android.bluetoothlegatt.R;
 
-import java.io.InterruptedIOException;
-import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
 
-import static com.google.android.gms.internal.zzagy.runOnUiThread;
+import java.util.Random;
+
+import static com.example.android.milestone.RandomData.*;
 
 /**
  * Created by Owner on 8/19/2017.
@@ -80,17 +78,28 @@ public class HomeFragment extends Fragment {
     }
 
 
-    void executeTask(){
-        new Timer().scheduleAtFixedRate(new TimerTask() {
+    @Override
+    public void onResume() {
+        super.onResume();
+        //update current time view after every 1 seconds
+        final Handler handler=new Handler();
+
+        final Runnable updateTask=new Runnable() {
             @Override
             public void run() {
-                Random r = new Random();
-                status = r.nextInt(max - ( min + 1)) + min;
+                updateTextView();
+                handler.postDelayed(this,120000);
             }
-        }, 0, 60000);
+        };
+
+        handler.postDelayed(updateTask,120000);
     }
 
-
-
+    public void updateTextView(){
+        tvHeartInfo.setText(" "+ pulse() + " bpm ");
+        tvLungInfo.setText(" "+ respiration() + " bpm " );
+    }
 
 }
+
+

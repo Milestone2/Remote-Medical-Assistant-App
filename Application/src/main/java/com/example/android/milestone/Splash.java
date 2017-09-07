@@ -36,6 +36,7 @@ public class Splash extends Activity {
         setContentView(R.layout.activity_splash);
         Backendless.setUrl( Defaults.SERVER_URL );
         Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
+        start = new Intent (Splash.this, MainActivity.class);
 
         userToken = UserTokenStorageFactory.instance().getStorage().get();
         start = new Intent(Splash.this, MainActivity.class);
@@ -54,8 +55,7 @@ public class Splash extends Activity {
 
                     @Override
                     public void handleFault(BackendlessFault fault) {
-                        Log.d("DEBUG", fault.getMessage());
-                        //start = new Intent(Splash.this, MainActivity.class);
+                        Log.d("DEBUG", fault.getMessage());               
                     }
                 });
             }

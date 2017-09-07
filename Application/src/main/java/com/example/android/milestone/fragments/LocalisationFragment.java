@@ -3,9 +3,8 @@ package com.example.android.milestone.fragments;
 import android.Manifest;
 import android.app.Dialog;
 import android.content.pm.PackageManager;
+
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
@@ -21,6 +20,7 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.example.android.bluetoothlegatt.R;
 import com.example.android.milestone.GPSTracker;
+import com.example.android.milestone.MenuActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.ErrorDialogFragment;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -50,8 +50,8 @@ import static com.example.android.bluetoothlegatt.R.id.tvLongitude;
 
 public class LocalisationFragment extends Fragment implements OnMapReadyCallback {
 
-    private Location currentLocation = null;
-    private LocationRequest mlocationRequest;
+    // private Location currentLocation = null;
+    //private LocationRequest mlocationRequest;
     private long UPDATE_INTERVAL = 60000;
     private long FASTEST_INTERVAL = 5000;
     private final static String KEY_LOCATION = "location";
@@ -63,7 +63,7 @@ public class LocalisationFragment extends Fragment implements OnMapReadyCallback
     boolean isNetworkEnabled = false;
     // Flag for GPS status
     boolean canGetLocation = false;
-    Location location; // Location
+    // Location location; // Location
     double latitude; // Latitude
     double longitude;
     // The minimum distance to change Updates in meters
@@ -72,7 +72,7 @@ public class LocalisationFragment extends Fragment implements OnMapReadyCallback
     private static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1; // 1 minute
 
 
-    protected LocationManager locationManager;
+    // protected LocationManager locationManager;
 
     private final static int CONNECTION_FAILURE_RESOLUTION = 9000;
     private FusedLocationProviderClient mFusedLocationClient;
@@ -93,14 +93,15 @@ public class LocalisationFragment extends Fragment implements OnMapReadyCallback
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View racine = inflater.inflate(R.layout.localisation_ui, container, false);
+        coordinatesGPS();
         tvLongitude = (TextView) racine.findViewById(R.id.tvLongitude);
         tvLatitude = (TextView) racine.findViewById(R.id.tvLatitude);
         tvgpsName = (TextView) racine.findViewById(R.id.tvgpsName);
         mapView = (MapView) racine.findViewById(R.id.mapView);
 
         userInfo = Backendless.UserService.CurrentUser();
-        tvLongitude.setText(String.valueOf(151));
-        tvLatitude.setText(String.valueOf(-34));
+        tvLongitude.setText(String.valueOf(longitude));
+        tvLatitude.setText(String.valueOf(latitude));
         tvgpsName.setText(userInfo.getProperty("Nom").toString());
 
         mapView.onCreate(savedInstanceState);
@@ -125,8 +126,8 @@ public class LocalisationFragment extends Fragment implements OnMapReadyCallback
 
         this.map = googleMap;
         this.map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        LatLng sydney = new LatLng(-34, 151);
-        this.map.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        LatLng sydney = new LatLng(latitude, longitude);
+        this.map.addMarker(new MarkerOptions().position(sydney).title("this is where I m"));
 
         this.map.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
@@ -150,83 +151,15 @@ public class LocalisationFragment extends Fragment implements OnMapReadyCallback
         mapView.onLowMemory();
     }
 
+public  void  coordinatesGPS(){
 
-
-    /*---------- Listener class to get coordinates ------------- */
-
-    public Location getLocation() {
-        try {
-            locationManager = (LocationManager) getContext().getSystemService(LOCATION_SERVICE);
-
-            // Getting GPS status
-            isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-
-            // Getting network status
-            isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-
-            if (!isGPSEnabled && !isNetworkEnabled) {
-                // No network provider is enabled
-            } else {
-                this.canGetLocation = true;
-                if (isNetworkEnabled) {
-                    if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                        // TODO: Consider calling
-                        //    ActivityCompat#requestPermissions
-                        // here to request the missing permissions, and then overriding
-                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                        //                                          int[] grantResults)
-                        // to handle the case where the user grants the permission. See the documentation
-                        // for ActivityCompat#requestPermissions for more details.
-                        //return TODO;
-
-                        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, (LocationListener) this);
-                        Log.d("Network", "Network");
-                        if (locationManager != null) {
-                            location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-                            if (location != null) {
-                                latitude = location.getLatitude();
-                                longitude = location.getLongitude();
-                            }
-                        }
-                    }
-
-                }
-                // If GPS enabled, get latitude/longitude using GPS Services
-                if (isGPSEnabled) {
-                    if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                        // TODO: Consider calling
-                        //    ActivityCompat#requestPermissions
-                        // here to request the missing permissions, and then overriding
-                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                        //                                          int[] grantResults)
-                        // to handle the case where the user grants the permission. See the documentation
-                        // for ActivityCompat#requestPermissions for more details.
-                        //return TODO;
-
-                        if (location == null) {
-                            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, (LocationListener) this);
-                            Log.d("GPS Enabled", "GPS Enabled");
-                            if (locationManager != null) {
-                                location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                                if (location != null) {
-                                    latitude = location.getLatitude();
-                                    longitude = location.getLongitude();
-                                }
-                            }
-                        }
-                    }
-
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return location;
+    try{
+    longitude = MenuActivity.gps.currentLocation().getLongitude();
+        latitude = MenuActivity.gps.currentLocation().getLatitude();
+    }catch (Exception e){
+        Toast.makeText(getContext(),"Coordinates Err:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
     }
-
-
-
+}
 
 }
 
