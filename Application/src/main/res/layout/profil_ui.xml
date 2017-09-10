@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <ImageView
         android:id="@+id/ivProfilImage"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
         android:layout_margin="20dp"
         app:srcCompat="@drawable/ic_profil" />
 
@@ -20,9 +19,7 @@
         android:id="@+id/tvProfilName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ivProfilImage"
-        android:layout_toEndOf="@+id/ivProfilImage"
-        android:layout_toRightOf="@+id/ivProfilImage"
+       android:layout_gravity="center"
         android:text="Josue NOEL"
         android:textColor="@android:color/background_dark"
         android:textSize="20sp"
@@ -51,13 +48,18 @@
         android:textColor="@android:color/holo_red_dark"
         android:textSize="12sp" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tvGS"
-        android:isScrollContainer="true"
-        android:orientation="vertical"
-        android:scrollbars="vertical">
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_layout"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView7"
@@ -66,6 +68,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginTop="15dp"
             android:paddingLeft="8sp"
+            android:layout_gravity="center"
             android:text="Information Personnelle"
             android:textColor="@color/newcolor"
             android:textSize="20sp"
@@ -74,33 +77,39 @@
 
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="adresse"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:layout_margin="3dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Adresse"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
         <TextView
             android:id="@+id/tv2"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="Téléphone"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:layout_margin="3dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Telephone"
+            tools:ignore="HardcodedText,UnusedAttribute"  />
 
         <TextView
             android:id="@+id/tv7"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="Date de naissance"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:layout_margin="3dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Date de Naissance"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
 
         <TextView
@@ -111,62 +120,70 @@
             android:layout_marginTop="15dp"
             android:paddingLeft="8sp"
             android:text="Etat de sante"
+            android:layout_gravity="center"
             android:textColor="@color/newcolor"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv5"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="Médecin affilié "
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:layout_margin="3dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Medecin affilié"
+            tools:ignore="HardcodedText,UnusedAttribute"  />
 
         <TextView
             android:id="@+id/tv6"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="hauteur"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:layout_margin="3dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Hauteur"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
         <TextView
             android:id="@+id/tvProfilPoids"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="Poids: 6.5Kg"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:layout_margin="3dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Poids: 6.5kg"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp">
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="30dp"
-                android:text="Température  moyenne : "
-                android:textColor="@android:color/black"
-                android:textSize="15sp" />
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:text="Température Moyenne: "
+                tools:ignore="HardcodedText,UnusedAttribute"  />
 
             <TextView
                 android:id="@+id/tvTempReceiver"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="30dp"
-                android:text="32"
+                android:layout_margin="0dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:gravity="center"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:text="52°"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
@@ -174,16 +191,15 @@
                 android:id="@+id/spTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
-
-        </LinearLayout>
-
         <TextView
             android:id="@+id/tv3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
             android:layout_marginLeft="10dp"
             android:text="ID"
             android:textColor="@android:color/black"
@@ -201,7 +217,6 @@
             android:text="Modifier le profil"
             android:textColor="@android:color/background_light" />
 
-    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/pbImage"
@@ -211,4 +226,7 @@
         android:layout_above="@+id/tvGS"
         android:layout_alignEnd="@+id/ivProfilImage"
         android:layout_marginEnd="13dp" />
-</RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
