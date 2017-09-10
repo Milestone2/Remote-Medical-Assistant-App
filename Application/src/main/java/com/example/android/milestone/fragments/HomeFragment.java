@@ -53,19 +53,19 @@ public class HomeFragment extends Fragment {
         ivTemp = (ImageView) racine_status.findViewById(R.id.ivTemp);
         Animation pulse = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pulse);
         Animation pulse2 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pulse2);
-        tvHeartInfo.setText("Chargement...");
+        /*tvHeartInfo.setText("Chargement...");
         tvLungInfo.setText("Chargement...");
-        tvTempInfo.setText("Chargement...");
+        tvTempInfo.setText("Chargement..."); */
         ivHeart.startAnimation(pulse);
         ivLung.startAnimation(pulse2);
 
 
-        ivHeart.setOnClickListener(new View.OnClickListener() {
+        /*ivHeart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvHeartInfo.setText(status + "BPM");
             }
-        });
+        });*/
 
 
         return racine_status;
@@ -101,6 +101,7 @@ public class HomeFragment extends Fragment {
         int resp = respiration();
         tvHeartInfo.setText(" "+ pulse + " bpm ");
         tvLungInfo.setText(" "+ resp + " bpm " );
+        //tvTempInfo.setText(" " + temp() + " ° C");
         sos(pulse,resp);
     }
 

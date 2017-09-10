@@ -20,16 +20,16 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_volume_up_grey600_36.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-hdpi-v4\\quantum_ic_volume_up_grey600_36.png"
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\469acecafd4ba2359c7c59761ad3fb880cfc5f09\\output\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_standard_color_18.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\469acecafd4ba2359c7c59761ad3fb880cfc5f09\\output\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_volume_up_grey600_36.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-hdpi-v4\\quantum_ic_volume_up_grey600_36.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
@@ -272,12 +272,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_36.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
-    },
-    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_stop_dark.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-hdpi-v4\\ic_media_stop_dark.png"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_36.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_forward_30_white_24.png",

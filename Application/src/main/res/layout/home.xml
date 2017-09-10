@@ -26,7 +26,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/heart1"
-                android:layout_marginBottom="13dp"
+                android:layout_gravity="center_vertical"
                 android:id="@+id/ivHeart"
                 android:layout_weight="1"/>
 
@@ -52,11 +52,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="65 bpm"
-                    android:fontFamily="sans-serif"
                     android:layout_marginTop="10dp"
-                    android:textSize="55sp"
-                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                    android:fontFamily="sans-serif"
+                    android:text="--- bpm"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="55sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -80,8 +80,9 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="13dp"
+                android:layout_height="130dp"
+
+                android:layout_gravity="center_vertical"
                 android:src="@drawable/lung"
                 android:id="@+id/ivLung"
                 android:layout_weight="1.4" />
@@ -107,7 +108,7 @@
                     android:id="@+id/tvLungInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2 bps"
+                    android:text="--- bpm"
                     android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:fontFamily="sans-serif"
@@ -136,9 +137,10 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
                 app:srcCompat="@drawable/thermo"
-                android:layout_marginBottom="13dp"
+
+                android:layout_gravity="center_vertical"
                 android:id="@+id/ivTemp"
                 android:layout_weight="1" />
 
@@ -164,7 +166,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="31° C"
+                    android:text="--- ° C"
                     android:layout_marginTop="10dp"
                     android:textSize="55sp"
                     android:textAppearance="?android:attr/textAppearanceLarge"/>
