@@ -98,7 +98,7 @@ public class ProfileFragment extends Fragment {
         tvGS = (TextView) racine_profil.findViewById(R.id.tvGS);
         pbImage = (ProgressBar) racine_profil.findViewById(R.id.pbImage);
         tvProfilePoids = (TextView) racine_profil.findViewById(R.id.tvProfilPoids);
-        tvTempreceiver = (TextView) racine_profil.findViewById(R.id.tvTempReceiver);
+       // tvTempreceiver = (TextView) racine_profil.findViewById(R.id.tvTempReceiver);
         btnModify = (Button) racine_profil.findViewById(R.id.btnModify);
 
 
@@ -123,10 +123,10 @@ public class ProfileFragment extends Fragment {
         adapterTemp = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, temp);
         adapterTemp.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spTemp.setAdapter(adapterTemp);
-        final double temf = Integer.valueOf(userInfo.getProperty("temp_m").toString()) * 1.8 + 32;
-        final int farei = (int) temf;
+       // final double temf = Integer.valueOf(userInfo.getProperty("temp_m").toString()) * 1.8 + 32;
+       // final int farei = (int) temf;
 
-        spTemp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+       /* spTemp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if(spTemp.getSelectedItemPosition() == 0){
@@ -140,7 +140,7 @@ public class ProfileFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
-        });
+        }); */
 
         ivProfilImage.setOnClickListener(new View.OnClickListener() {
             @Override
