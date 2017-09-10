@@ -8,8 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.android.bluetoothlegatt.R;
+import com.example.android.milestone.SendActivity;
 
 
 import java.util.Random;
@@ -30,11 +32,13 @@ public class HomeFragment extends Fragment {
     final int max = 99;
     final int min = 60;
     int status = 32;
+    SendActivity send ;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View racine_status = inflater.inflate(R.layout.home, container, false);
+
         tvHeartInfo = (TextView) racine_status.findViewById(R.id.tvHeartInfo);
         tvLungInfo = (TextView) racine_status.findViewById(R.id.tvLungInfo);
         tvTempInfo = (TextView) racine_status.findViewById(R.id.tvTempInfo);
@@ -45,19 +49,6 @@ public class HomeFragment extends Fragment {
         tvLungInfo.setText("Chargement...");
         tvTempInfo.setText("Chargement...");
 
-       new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                new Timer().scheduleAtFixedRate(new TimerTask() {
-                    @Override
-                    public void run() {
-                        Random r = new Random();
-                        status = r.nextInt(max - ( min + 1)) + min;
-                    }
-
-                }, 0, 20000);
-            }
-        }, 1000);
 
         floatingHeart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,16 +79,28 @@ public class HomeFragment extends Fragment {
             @Override
             public void run() {
                 updateTextView();
-                handler.postDelayed(this,120000);
+                handler.postDelayed(this,30000);
             }
         };
 
-        handler.postDelayed(updateTask,120000);
+        handler.postDelayed(updateTask,30000);
     }
 
     public void updateTextView(){
-        tvHeartInfo.setText(" "+ pulse() + " bpm ");
-        tvLungInfo.setText(" "+ respiration() + " bpm " );
+        int pulse =  pulse();
+        int resp = respiration();
+        tvHeartInfo.setText(" "+ pulse + " bpm ");
+        tvLungInfo.setText(" "+ resp + " bpm " );
+        sos(pulse,resp);
+    }
+
+
+    public final void sos(int pulse, int resp){
+        if( (pulse < 30||  pulse > 120) || (resp < 10  || resp > 30  )){
+            send = new SendActivity();
+            send.sendSMS("33515777",pulse,resp);
+            //Toast.makeText(getContext(), "SOS SMS", Toast.LENGTH_LONG).show();
+        }
     }
 
 }

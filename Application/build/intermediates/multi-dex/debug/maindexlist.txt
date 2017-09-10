@@ -1031,7 +1031,6 @@ com/google/android/gms/cast/RemoteMediaPlayer$MediaChannelResult.class
 com/google/android/gms/cast/CastRemoteDisplay$CastRemoteDisplayOptions.class
 com/google/android/gms/location/GeofencingApi.class
 com/google/android/gms/common/zze.class
-com/example/android/milestone/models/History.class
 com/google/android/gms/games/Player.class
 android/support/v4/widget/ViewDragHelper.class
 com/google/android/gms/games/request/Requests.class

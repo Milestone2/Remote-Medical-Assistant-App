@@ -31,11 +31,14 @@
     <TextView
         android:id="@+id/tvH_summary"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:textColor="@android:color/black"
-        android:text="Summary"
-        android:layout_below="@+id/tvH_doctor"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/tvH_doctor"
         android:layout_alignStart="@+id/tvH_date"
-        android:layout_alignEnd="@+id/tvH_doctor" />
+        android:layout_below="@+id/tvH_doctor"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="4"
+        android:paddingBottom="5dp"
+        android:text="Summary"
+        android:textColor="@android:color/black" />
 </RelativeLayout>

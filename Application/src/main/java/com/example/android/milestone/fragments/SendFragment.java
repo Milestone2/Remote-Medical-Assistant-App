@@ -16,12 +16,6 @@ public class SendFragment extends Fragment{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SendActivity send=((SendActivity)getActivity());
-        //send.sendEmail();
-        //send.sendSMS("33515777");
-        //Toast.makeText(getContext(),"yes yes",Toast.LENGTH_LONG).show();
-        send.test();
-
 
     }
 
