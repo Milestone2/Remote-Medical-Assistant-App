@@ -1,5 +1,6 @@
 package com.example.android.milestone.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -7,6 +8,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +19,8 @@ import com.example.android.milestone.SendActivity;
 
 
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static com.example.android.milestone.RandomData.*;
 
@@ -26,9 +32,9 @@ public class HomeFragment extends Fragment {
     public TextView tvHeartInfo;
     public TextView tvLungInfo;
     public TextView tvTempInfo;
-    FloatingActionButton floatingHeart;
-    FloatingActionButton floatingLung;
-    FloatingActionButton floatingTemp;
+    ImageView ivHeart;
+    ImageView ivLung;
+    ImageView ivTemp;
     final int max = 99;
     final int min = 60;
     int status = 32;
@@ -42,15 +48,19 @@ public class HomeFragment extends Fragment {
         tvHeartInfo = (TextView) racine_status.findViewById(R.id.tvHeartInfo);
         tvLungInfo = (TextView) racine_status.findViewById(R.id.tvLungInfo);
         tvTempInfo = (TextView) racine_status.findViewById(R.id.tvTempInfo);
-        floatingHeart = (FloatingActionButton) racine_status.findViewById(R.id.floatingHeart);
-        floatingLung = (FloatingActionButton) racine_status.findViewById(R.id.floatingLung);
-        floatingTemp = (FloatingActionButton) racine_status.findViewById(R.id.floatingTemp);
+        ivHeart = (ImageView) racine_status.findViewById(R.id.ivHeart);
+        ivLung = (ImageView) racine_status.findViewById(R.id.ivLung);
+        ivTemp = (ImageView) racine_status.findViewById(R.id.ivTemp);
+        Animation pulse = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pulse);
+        Animation pulse2 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pulse2);
         tvHeartInfo.setText("Chargement...");
         tvLungInfo.setText("Chargement...");
         tvTempInfo.setText("Chargement...");
+        ivHeart.startAnimation(pulse);
+        ivLung.startAnimation(pulse2);
 
 
-        floatingHeart.setOnClickListener(new View.OnClickListener() {
+        ivHeart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvHeartInfo.setText(status + "BPM");

@@ -1,152 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f3f0f0">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingHeart"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"
-        app:backgroundTint="@color/ThemeColor"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/heart" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingTemp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="360dp"
-        app:backgroundTint="@color/ThemeColor"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/temperature" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingLung"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="230dp"
-        android:clickable="true"
-        app:backgroundTint="@color/ThemeColor"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/ic_lungbon" />
-
-    <LinearLayout
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_heart"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="170dp"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="3dp"
+        android:layout_marginBottom="4dp"
+        card_view:cardUseCompatPadding="true">
 
-        <RelativeLayout
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/heartContainer"
-            android:layout_marginTop="50dp">
+            android:layout_height="150dp">
 
-            <TextView
-                android:id="@+id/tvInfo1"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:text="Rythme cardiaque :"
-                android:textColor="@color/ThemeColor"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:layout_marginEnd="67dp"
-                android:layout_above="@+id/tvHeartInfo"
-                android:layout_alignParentEnd="true" />
+                app:srcCompat="@drawable/heart1"
+                android:layout_marginBottom="13dp"
+                android:id="@+id/ivHeart"
+                android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/tvHeartInfo"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:paddingLeft="10dp"
-                android:text="65 bpm "
-                android:textColor="@color/colorio"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_centerVertical="true"
-                android:layout_alignStart="@+id/tvInfo1" />
+                android:layout_marginTop="12dp"
+                android:layout_weight="2">
 
-        </RelativeLayout>
+                <TextView
+                    android:text="Rythme cardiaque :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/tvInfo1" />
 
-        <RelativeLayout
+                <TextView
+                    android:id="@+id/tvHeartInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="65 bpm"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="10dp"
+                    android:textSize="55sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_lung"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="3dp"
+        android:layout_marginBottom="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/lungsContainer"
-            android:layout_marginTop="80dp">
+            android:layout_height="150dp">
 
-            <TextView
-                android:id="@+id/tvInfo3"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Rythme pulmonaire: "
-                android:textColor="@color/ThemeColor"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:layout_marginRight="9dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginStart="25dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp" />
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/lung"
+                android:id="@+id/ivLung"
+                android:layout_weight="1.4" />
 
-            <TextView
-                android:id="@+id/tvLungInfo"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="2 bps"
-                android:textColor="@color/colorio"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_centerVertical="true"
-                android:layout_alignEnd="@+id/tvInfo3" />
+                android:layout_marginTop="12dp"
+                android:layout_weight="2">
 
-        </RelativeLayout>
+                <TextView
+                    android:text="Rythme pulmonaire: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/tvInfo3" />
 
-        <RelativeLayout
+                <TextView
+                    android:id="@+id/tvLungInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 bps"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="55sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_temp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="3dp"
+        android:layout_marginBottom="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/tempContainer"
-            android:layout_marginTop="30dp">
+            android:layout_height="150dp">
 
-            <TextView
-                android:id="@+id/tvInfo4"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Temperature moyenne:"
-                android:textColor="@color/ThemeColor"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:layout_marginEnd="40dp"
-                android:layout_above="@+id/tvTempInfo"
-                android:layout_alignParentEnd="true"
-                android:layout_marginBottom="12dp" />
+                app:srcCompat="@drawable/thermo"
+                android:layout_marginBottom="13dp"
+                android:id="@+id/ivTemp"
+                android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/tvTempInfo"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="31 C"
-                android:textColor="@color/colorio"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_alignParentBottom="true"
-                android:layout_alignStart="@+id/tvInfo4"
-                android:layout_marginBottom="28dp" />
+                android:layout_marginTop="12dp"
+                android:layout_weight="2">
 
+                <TextView
+                    android:text="Temperature moyenne:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/tvInfo4" />
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/tvTempInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="31° C"
+                    android:layout_marginTop="10dp"
+                    android:textSize="55sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </LinearLayout>
+        </LinearLayout>
 
-    </LinearLayout>
+    </android.support.v7.widget.CardView>
 
-
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
