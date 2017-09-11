@@ -29,21 +29,16 @@
         android:id="@+id/tvProfilDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvProfilName"
-        android:layout_toEndOf="@+id/ivProfilImage"
-        android:layout_toRightOf="@+id/ivProfilImage"
-        tools:text="20/05/1986"
+        android:layout_gravity="center_horizontal"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        tools:text="20/05/1986" />
 
     <TextView
         android:id="@+id/tvGS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/ivProfilImage"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="15dp"
+        android:layout_gravity="center_horizontal"
         android:text="G.S: A+"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="12sp" />

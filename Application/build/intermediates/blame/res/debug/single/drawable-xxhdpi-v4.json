@@ -16,16 +16,16 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\979dc738e329b0e9e4985588bd30a8bf14e2ac38\\output\\res\\drawable-xxhdpi-v4\\amu_bubble_mask.9.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_16_light.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_16_light.png"
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_dark.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_dark.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_light.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_light.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_dark.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_dark.png"
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_16_light.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_16_light.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_22_dark.png",
@@ -36,20 +36,20 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_tv_dark.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_tv_dark.png"
-    },
-    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_dark.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_dark.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png"
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_tv_dark.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_tv_dark.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_light.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_light.png"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
@@ -144,12 +144,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_2.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\ccfb912fe756f73dbbc417332a8e9bc1e625a01d\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_2.png"
-    },
-    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_19_light.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_19_light.png"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_2.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\ccfb912fe756f73dbbc417332a8e9bc1e625a01d\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_2.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_09_light.png",
@@ -188,12 +188,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_dark.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_24.png",
@@ -204,12 +204,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png"
-    },
-    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_speaker_dark.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_dark.png"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_stop_dark.png",
@@ -296,12 +296,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_group_dark.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\d75fecc446934dbb05bb15a127def58685d86784\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
@@ -316,12 +316,12 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_dark.png"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_light.png",
-        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_light.png"
-    },
-    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_light.png",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_light.png"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_light.png",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\6816fa1774736f5c9a0a3a4185c9d7e234bd365a\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_light.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered_by_google_dark.png",

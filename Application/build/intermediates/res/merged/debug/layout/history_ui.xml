@@ -18,20 +18,6 @@
         app:fabSize="normal"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/ThemeColor"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:padding="5dp"
-        android:shadowColor="@android:color/black"
-        android:shadowDx="3"
-        android:shadowDy="3"
-        android:shadowRadius="6"
-        android:text="Historique"
-        android:textColor="@android:color/background_light"
-        android:textSize="20dp" />
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"

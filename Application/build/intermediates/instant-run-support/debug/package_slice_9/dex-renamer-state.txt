@@ -1,0 +1,4 @@
+#Sun Sep 10 17:11:24 GMT-05:00 2017
+base.0=C\:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_9
+renamed.0=classes.dex
+file.0=C\:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_9\\classes.dex

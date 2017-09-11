@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:16:1-82:12
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:16:1-83:12
 	package
 		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:17:5-50
 	android:versionName
@@ -51,12 +51,16 @@ uses-permission#android.permission.CAMERA
 ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:41:5-64
 	android:name
 		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:41:22-62
-uses-feature#android.hardware.camera
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:42:5-59
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:42:5-69
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:42:19-57
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:42:22-66
+uses-feature#android.hardware.camera
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:43:5-59
+	android:name
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:43:19-57
 application
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:45:5-80:19
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:46:5-81:19
 MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Owner\.android\build-cache\e662e7afab6767cef7b68f9f145854d0d63ff0e1\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Owner\.android\build-cache\8a748cb805d5d3531057fd83fcdeb36eabb61007\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\Owner\.android\build-cache\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\output\AndroidManifest.xml:29:5-20
@@ -117,75 +121,75 @@ MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\Owner\.android\buil
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Owner\.android\build-cache\d0531a692625fe165e286ddfd5cdbf885ff9f3cd\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Owner\.android\build-cache\c21c20a8f531b9dc8488b00d87ed533703acdc32\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:47:9-41
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:48:9-41
 	android:icon
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:46:9-38
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:47:9-38
 	android:largeHeap
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:49:9-33
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:50:9-33
 	android:theme
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:48:9-40
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:49:9-40
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:50:9-68
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:51:9-68
 activity#com.example.android.milestone.bluetoothGattBLE.DeviceScanActivity
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:51:9-54:63
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:52:9-55:63
 	android:label
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:53:13-45
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:54:13-45
 	android:theme
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:54:13-60
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:55:13-60
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:52:13-93
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:53:13-93
 activity#com.example.android.milestone.bluetoothGattBLE.DeviceControlActivity
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:55:9-57:63
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:56:9-58:63
 	android:theme
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:57:13-60
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:58:13-60
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:56:13-96
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:57:13-96
 service#com.example.android.milestone.bluetoothGattBLE.BluetoothLeService
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:59:9-62:63
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:60:9-63:63
 	android:enabled
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:61:13-35
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:62:13-35
 	android:theme
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:62:13-60
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:63:13-60
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:60:13-93
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:61:13-93
 activity#com.example.android.milestone.Splash
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:64:9-70:20
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:65:9-71:20
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:64:19-70
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:65:19-70
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:65:13-69:29
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:66:13-70:29
 action#android.intent.action.MAIN
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:66:17-69
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:67:17-69
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:66:25-66
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:67:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:68:17-77
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:69:17-77
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:68:27-74
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:69:27-74
 activity#com.example.android.milestone.MainActivity
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:71:9-73:59
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:72:9-74:59
 	android:label
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:73:13-56
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:74:13-56
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:72:13-70
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:73:13-70
 activity#com.example.android.milestone.MenuActivity
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:74:9-79
-	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:74:19-76
-activity#com.example.android.milestone.SendActivity
 ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:75:9-79
 	android:name
 		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:75:19-76
+activity#com.example.android.milestone.SendActivity
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:76:9-79
+	android:name
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:76:19-76
 activity#com.example.android.milestone.RegisterActivity
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:76:9-92
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:77:9-92
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:76:19-80
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:77:19-80
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:77:9-79:55
+ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:78:9-80:55
 	android:value
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:79:13-52
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:80:13-52
 	android:name
-		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:78:13-58
+		ADDED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml:79:13-58
 uses-sdk
 INJECTED from C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Owner\.android\build-cache\cb5172dc29be57e2463646adfe978c604141f215\output\AndroidManifest.xml:18:5-42

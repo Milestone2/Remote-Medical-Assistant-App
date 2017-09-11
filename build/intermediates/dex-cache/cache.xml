@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5889f59ebe81c9a4552d06d9900939c40dd3e596\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="00ae9c53a49487e4d41f419c7a0b0374d03d7bff">
+        <dex dex="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2e8922ba14c9882a54b30c8beed19ba74265133a\classes.dex" />
+    </item>
+
+</items>

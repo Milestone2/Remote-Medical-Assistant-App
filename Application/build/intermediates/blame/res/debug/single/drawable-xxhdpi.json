@@ -20,6 +20,10 @@
         "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_profil.png"
     },
     {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_lungbon.png",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_lungbon.png"
+    },
+    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_share.png",
         "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_share.png"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_localisation.png",
         "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_localisation.png"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_lung.png",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_lung.png"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_setting_bluetooth.png",
