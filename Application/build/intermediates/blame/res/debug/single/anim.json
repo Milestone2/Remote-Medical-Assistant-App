@@ -20,10 +20,6 @@
         "source": "C:\\Users\\Owner\\.android\\build-cache\\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\\output\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\pulse2.xml",
-        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\anim\\pulse2.xml"
-    },
-    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
@@ -40,6 +36,10 @@
         "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\anim\\pulse.xml"
     },
     {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\temp.xml",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\anim\\temp.xml"
+    },
+    {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\62f8849c697ac122faaaa5f846a81a2d25c78a89\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
@@ -50,6 +50,10 @@
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
         "source": "C:\\Users\\Owner\\.android\\build-cache\\7a1f1d2ba467d240bc5cedfcaaa937bf9517ed04\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\lung.xml",
+        "source": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\src\\main\\res\\anim\\lung.xml"
     },
     {
         "merged": "C:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",

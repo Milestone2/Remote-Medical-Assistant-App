@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.bluetoothlegatt.R;
+import com.example.android.milestone.MenuActivity;
 import com.example.android.milestone.SendActivity;
 
 
@@ -38,7 +39,7 @@ public class HomeFragment extends Fragment {
     final int max = 99;
     final int min = 60;
     int status = 32;
-    SendActivity send ;
+    SendActivity send;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -51,27 +52,19 @@ public class HomeFragment extends Fragment {
         ivHeart = (ImageView) racine_status.findViewById(R.id.ivHeart);
         ivLung = (ImageView) racine_status.findViewById(R.id.ivLung);
         ivTemp = (ImageView) racine_status.findViewById(R.id.ivTemp);
-        Animation pulse = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pulse);
-        Animation pulse2 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pulse2);
-        /*tvHeartInfo.setText("Chargement...");
-        tvLungInfo.setText("Chargement...");
-        tvTempInfo.setText("Chargement..."); */
-        ivHeart.startAnimation(pulse);
-        ivLung.startAnimation(pulse2);
 
+        Animation pulseAnim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pulse);
+        Animation lungAnim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.lung);
+        Animation tempAnim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.temp);
 
-        /*ivHeart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tvHeartInfo.setText(status + "BPM");
-            }
-        });*/
-
+        ivHeart.startAnimation(pulseAnim);
+        ivLung.startAnimation(lungAnim);
+        ivTemp.startAnimation(tempAnim);
 
         return racine_status;
     }
 
-    public static HomeFragment newInstance(){
+    public static HomeFragment newInstance() {
         HomeFragment homeFragment = new HomeFragment();
         Bundle args = new Bundle();
         homeFragment.setArguments(args);
@@ -83,33 +76,38 @@ public class HomeFragment extends Fragment {
     public void onResume() {
         super.onResume();
         //update current time view after every 1 seconds
-        final Handler handler=new Handler();
+        final Handler handler = new Handler();
 
-        final Runnable updateTask=new Runnable() {
+        final Runnable updateTask = new Runnable() {
             @Override
             public void run() {
                 updateTextView();
-                handler.postDelayed(this,30000);
+                handler.postDelayed(this, 30000);
             }
         };
 
-        handler.postDelayed(updateTask,30000);
+        handler.postDelayed(updateTask, 30000);
     }
 
-    public void updateTextView(){
-        int pulse =  pulse();
+    public void updateTextView() {
+        int pulse = pulse();
         int resp = respiration();
-        tvHeartInfo.setText(" "+ pulse + " bpm ");
-        tvLungInfo.setText(" "+ resp + " bpm " );
+        tvHeartInfo.setText(" " + pulse + " bpm ");
+        tvLungInfo.setText(" " + resp + " bpm ");
         //tvTempInfo.setText(" " + temp() + " ° C");
-        sos(pulse,resp);
+        sos(pulse, resp);
     }
 
 
-    public final void sos(int pulse, int resp){
-        if( (pulse < 30||  pulse > 120) || (resp < 10  || resp > 30  )){
+    public final void sos(int pulse, int resp) {
+        if ((pulse < 30 || pulse > 120) || (resp < 10 || resp > 30)) {
             send = new SendActivity();
-            send.sendSMS("33515777",pulse,resp);
+            //send.sendSMS("33515777",pulse,resp);
+
+            for (int i = 0; i < MenuActivity.c.size(); i++) {
+                send.sendSMS(String.valueOf(MenuActivity.c.get(i).getTel()), pulse, resp);
+            }
+
             //Toast.makeText(getContext(), "SOS SMS", Toast.LENGTH_LONG).show();
         }
     }
