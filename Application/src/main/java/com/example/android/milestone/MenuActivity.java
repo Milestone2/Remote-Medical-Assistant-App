@@ -58,7 +58,7 @@ public class MenuActivity extends AppCompatActivity {
     TextView tvL_user;
     TextView tvL_email;
 
-    public ArrayList<Contact> c;//Listes des contacts a afficher
+    public  static ArrayList<Contact> c;//Listes des contacts a afficher
     DataQueryBuilder c_query;
 
     public DataQueryBuilder contactQuery;
@@ -112,10 +112,10 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                 //sendEmail();
-                sendSMS("37396810");
-                for(int i = 0; i < c.size(); i++){
+               // sendSMS("37396810");
+              /*  for(int i = 0; i < c.size(); i++){
                     sendSMS(String.valueOf(c.get(i).getTel()));
-                }
+                }*/
             }
         });
 
@@ -276,7 +276,7 @@ public class MenuActivity extends AppCompatActivity {
         }
     }
 
-    public void sendSMS(String phone) {
+    /*public void sendSMS(String phone) {
 
         String sms = "Please help," +  "location()" + "My Body Diagnostic -\n" + "Heart beat:89BMP\n" + "Oxygen:89% \n" + "Breathing:89 \n" + "Tempeture:89.F \n";
 
@@ -292,29 +292,9 @@ public class MenuActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-    }
+    }*/
 
-    /*private String location() {
-        // TODO Auto-generated method stub
-        // create class object
-        gps = new GPSTracker(getApplicationContext());
 
-        // check if GPS enabled
-        if (gps.canGetLocation()) {
-
-            latitude = gps.getLatitude();
-            longitude = gps.getLongitude();
-            // \n is for new line
-            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
-        } else {
-            // can't get location
-            // GPS or Network is not enabled
-            // Ask user to enable GPS/network in settings
-            //gps.showSettingsAlert();
-
-        }
-        return "my Location is Lat:" + latitude + "\nLong:" + longitude;
-    } */
 
     public void onLogout(MenuItem item) {
         signOutDialog();

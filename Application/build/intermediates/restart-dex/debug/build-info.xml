@@ -6,36 +6,45 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1505087563156"
+    timestamp="1505101068598"
     token="-3068385400008104666"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1717" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="24" />
+        duration="0" />
     <task
         name="verifier"
-        duration="3" />
+        duration="0" />
 
-    <artifact
-        location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
     <artifact
         location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\outputs\apk\Application-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1505081469193"
+        timestamp="1505096781100"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\outputs\apk\Application-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -44,51 +53,36 @@
             location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1505099140461"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\outputs\apk\Application-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1505087195295"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\outputs\apk\Application-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1505087563156"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
             location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1505101068598"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Workspace_Android\medi-care\Remote-Medical-Assistant-App\Application\build\outputs\apk\Application-debug.apk"
             type="SPLIT_MAIN" />

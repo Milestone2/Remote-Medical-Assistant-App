@@ -25,8 +25,9 @@ public final class R {
         public static final int design_fab_out=0x7f04000d;
         public static final int design_snackbar_in=0x7f04000e;
         public static final int design_snackbar_out=0x7f04000f;
-        public static final int pulse=0x7f040010;
-        public static final int pulse2=0x7f040011;
+        public static final int lung=0x7f040010;
+        public static final int pulse=0x7f040011;
+        public static final int temp=0x7f040012;
     }
     public static final class animator {
         public static final int design_appbar_state_list_animator=0x7f050000;
