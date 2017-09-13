@@ -33,12 +33,13 @@ public class SendActivity extends AppCompatActivity {
 
     public void sendSMS(String phone, int pulse, int resp) {
 
-        String sms = "Please help\n" + "My Body Diagnostic:\n" + "Heart beat: " + pulse + " BMP\n" +
-                "Breathing: " + resp + " BPM\n" + "Temperature: 89.F\n" + "My Location: " +
-                "https://maps.google.com/maps?q=" + MenuActivity.gps.currentLocation().getLatitude() + "," + MenuActivity.gps.currentLocation().getLongitude() + "&z=18\n";
-
 
         try {
+
+            String sms = "Please help\n" + "My Body Diagnostic:\n" + "Heart beat: " + pulse + " BMP\n" +
+                    "Breathing: " + resp + " BPM\n" + "Temperature: --- c\n" + "My Location: " +
+                    "https://maps.google.com/maps?q=" + MenuActivity.gps.currentLocation().getLatitude() + "," + MenuActivity.gps.currentLocation().getLongitude() + "&z=18\n";
+
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(phone, null, sms, null, null);
             Log.d("TEST_SMS", "PASS : " + phone);

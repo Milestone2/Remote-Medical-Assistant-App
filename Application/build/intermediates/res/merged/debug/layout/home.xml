@@ -14,6 +14,7 @@
         card_view:cardBackgroundColor="#FFF"
         card_view:cardCornerRadius="10dp"
         card_view:cardElevation="3dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="4dp"
         card_view:cardUseCompatPadding="true">
 

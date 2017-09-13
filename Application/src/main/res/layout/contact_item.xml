@@ -2,73 +2,93 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/ivImgProfil"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_heart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="17dp"
-        app:srcCompat="@drawable/ic_profil" />
+        android:layout_alignParentStart="true">
 
-    <TextView
-        android:id="@+id/tvitemNom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ivImgProfil"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_toEndOf="@+id/ivImgProfil"
-        android:layout_toRightOf="@+id/ivImgProfil"
-        tools:text="Noel Emmanuel Roodly"
-        android:textSize="18sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvtelNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="50937396810"
-        android:layout_below="@+id/ivImgProfil"
-        android:layout_alignLeft="@+id/tvEmail"
-        android:layout_alignStart="@+id/tvEmail" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/tvtelNumber"
-        android:layout_alignBottom="@+id/tvtelNumber"
-        android:layout_toEndOf="@+id/tvtelNumber"
-        android:layout_toRightOf="@+id/tvtelNumber"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="|" />
+            <ImageView
+                android:id="@+id/ivImgProfil"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_profil" />
 
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvitemNom"
-        android:layout_alignStart="@+id/tvitemNom"
-        android:layout_below="@+id/tvitemNom"
-        tools:text="emmanuelroodly@yahoo.fr"
-        android:textColor="@android:color/holo_blue_light" />
+            <TextView
+                android:id="@+id/tvitemNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivImgProfil"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_toEndOf="@+id/ivImgProfil"
+                android:layout_toRightOf="@+id/ivImgProfil"
+                android:textSize="18sp"
+                tools:text="Noel Emmanuel Roodly" />
 
-    <TextView
-        android:id="@+id/tvtelNumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="50933271774"
-        android:layout_alignBaseline="@+id/textView6"
-        android:layout_alignBottom="@+id/textView6"
-        android:layout_toRightOf="@+id/textView6"
-        android:layout_toEndOf="@+id/textView6" />
+            <TextView
+                android:id="@+id/tvtelNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvEmail"
+                android:layout_alignStart="@+id/tvEmail"
+                android:layout_below="@+id/ivImgProfil"
+                tools:text="50937396810"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvtelNumber"
+                android:layout_alignBottom="@+id/tvtelNumber"
+                android:layout_toEndOf="@+id/tvtelNumber"
+                android:layout_toRightOf="@+id/tvtelNumber"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvitemNom"
+                android:layout_alignStart="@+id/tvitemNom"
+                android:layout_below="@+id/tvitemNom"
+                android:textColor="@android:color/holo_blue_light"
+                tools:text="emmanuelroodly@yahoo.fr" />
+
+            <TextView
+                android:id="@+id/tvtelNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6"
+                tools:text="50933271774" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 </RelativeLayout>

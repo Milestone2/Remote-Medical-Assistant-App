@@ -54,12 +54,12 @@ public class MenuActivity extends AppCompatActivity {
     private NavigationView nvDrawer;
     public FloatingActionButton fab;
     FrameLayout fragmentContainer;
-    BackendlessUser user;
+    public  static BackendlessUser user;
     TextView tvL_user;
     TextView tvL_email;
 
     public  static ArrayList<Contact> c;//Listes des contacts a afficher
-    DataQueryBuilder c_query;
+    public static DataQueryBuilder c_query;
 
     public DataQueryBuilder contactQuery;
 
@@ -129,7 +129,7 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
-    public void loadContact(){
+    public static void loadContact(){
         String query = "id = " + "'" + user.getUserId() + "'";
         c_query = DataQueryBuilder.create();
         c_query.setWhereClause(query);

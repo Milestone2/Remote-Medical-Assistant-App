@@ -1,4 +1,4 @@
-#Sun Sep 10 22:37:53 GMT-05:00 2017
+#Tue Sep 12 14:58:13 GMT-05:00 2017
 base.0=C\:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2e8922ba14c9882a54b30c8beed19ba74265133a
 renamed.1=classes2.dex
 renamed.0=classes.dex

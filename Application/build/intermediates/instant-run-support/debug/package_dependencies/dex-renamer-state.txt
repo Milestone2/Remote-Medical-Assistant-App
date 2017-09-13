@@ -1,4 +1,4 @@
-#Sun Sep 10 17:11:22 GMT-05:00 2017
+#Tue Sep 12 11:04:33 GMT-05:00 2017
 file.75=C\:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_72751491cf031b6dac7546d50cdf8bd151826b21\\classes.dex
 file.74=C\:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d70a239abf09bb43754984176708bbf2f513908d\\classes.dex
 file.73=C\:\\Workspace_Android\\medi-care\\Remote-Medical-Assistant-App\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_9ca00cfa8c3953646720bb0c5828dca6937fb2c5\\classes.dex
