@@ -36,9 +36,6 @@ public class HomeFragment extends Fragment {
     ImageView ivHeart;
     ImageView ivLung;
     ImageView ivTemp;
-    final int max = 99;
-    final int min = 60;
-    int status = 32;
     SendActivity send;
 
     @Override
@@ -75,7 +72,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        //update current time view after every 1 seconds
+        //update current time view after every 30000 seconds
         final Handler handler = new Handler();
 
         final Runnable updateTask = new Runnable() {
@@ -102,13 +99,10 @@ public class HomeFragment extends Fragment {
     public final void sos(int pulse, int resp) {
         if ((pulse < 30 || pulse > 120) || (resp < 10 || resp > 30)) {
             send = new SendActivity();
-            //send.sendSMS("33515777",pulse,resp);
-
+            MenuActivity.loadContact();
             for (int i = 0; i < MenuActivity.c.size(); i++) {
                 send.sendSMS(String.valueOf(MenuActivity.c.get(i).getTel()), pulse, resp);
             }
-
-            //Toast.makeText(getContext(), "SOS SMS", Toast.LENGTH_LONG).show();
         }
     }
 

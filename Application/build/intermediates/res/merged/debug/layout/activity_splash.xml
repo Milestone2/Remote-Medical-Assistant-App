@@ -5,11 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.milestone.Splash">
+
+
+
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="420dp"
+        android:src="@drawable/heart1"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/ivHeart"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"/>
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:elevation="10dp"
         android:fontFamily="sans-serif-condensed"
         android:shadowColor="@android:color/black"
@@ -17,8 +28,12 @@
         android:shadowDy="3"
         android:shadowRadius="6"
         android:text="Medi-Care"
-        android:textColor="@color/colorPrimary"
-        android:textSize="40sp" />
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        android:layout_alignBottom="@+id/ivHeart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp" />
 
 
 </RelativeLayout>

@@ -8,6 +8,9 @@ import android.os.Handler;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.backendless.Backendless;
@@ -28,12 +31,17 @@ public class Splash extends Activity {
     public String userToken;
     public Intent start;
     public boolean valid;
+    ImageView ivHeart;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        ivHeart = (ImageView) findViewById(R.id.ivHeart);
+        Animation pulseAnim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.pulse);
+        ivHeart.startAnimation(pulseAnim);
+
         Backendless.setUrl( Defaults.SERVER_URL );
         Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
         start = new Intent (Splash.this, MainActivity.class);
